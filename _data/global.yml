@@ -1,12 +1,11 @@
 # Site Settings
-title: 'mzmls github page'
-google_analytics: 'UA-88462102-1'
-description: 'Hello! This is my Github page at mzml.github.io'
-url: 'https://mzmls.github.io' # the base hostname & protocol for your site
-footer_text: 'This text is footer text. Footer text goes here.'
-charset: 'utf-8'
 lang: 'en'
+charset: 'utf-8'
+title: 'mzmls.github.io'
+google_analytics: 'UA-88462102-1'
+description: 'Hello! Welcome to mzmls.github.io, this site is hosted on github.'
+url: 'https://mzmls.github.io' # the base hostname & protocol for your site
 
 # Admin Settings
-admin_name: 'Nicholas Cerminara'
-admin_email: 'nick@scotch.io'
+admin_name: 'Muzamil Satar'
+admin_email: 'muz@mzml.io'
