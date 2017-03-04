@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ site.data.global.lang }}">
-    
+<html class="no-js" lang="{{ site.data.global.lang }}">
     {% include head.html %}
-
 <body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
     {% include header.html %}
     
     {{ content }}
 
     {% include footer.html %}
+
+
+    <script src="js/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+    {% if jekyll.environment == "production" %}
+    {% include google_analytics.html %}
+    {% endif %}
 </body>
 
 </html>
