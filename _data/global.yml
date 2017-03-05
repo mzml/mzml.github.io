@@ -1,7 +1,7 @@
 # Site Settings
 lang: 'en'
 charset: 'utf-8'
-title: 'mzmls.github.io'
+title: 'mzmls@github'
 google_analytics: 'UA-88462102-1'
 description: 'Hello! Welcome to mzmls.github.io, this site is hosted on github.'
 url: 'https://mzmls.github.io' # the base hostname & protocol for your site
