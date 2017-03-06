@@ -1,34 +1,9 @@
 ---
 ---
 
-@import "normalize";
-
-@media screen and (max-width: 480px) {
-    body {
-        font-family: 'Noto Serif', serif;
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 150%;
-        background-color: seagreen;
-        color: greenyellow;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-    body {
-        font-family: 'Noto Serif', serif;
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 200%;
-        background-color: seagreen;
-        color: greenyellow;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    body {
-        font-family: 'Noto Serif', serif;
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 300%;
-        background-color: seagreen;
-        color: greenyellow;
-    }
-}
+@import 
+    "normalize",
+    "layout",
+    "type",
+    "logo",
+    "nav";
