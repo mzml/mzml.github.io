@@ -1,11 +1,6 @@
 <head>
     <meta charset="{{ site.data.global.charset }}">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="{{ site.data.global.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <script src="js/modernizr.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
     <title>
         {% if page.title == "home" %}
             {{ site.data.global.title }}
@@ -13,4 +8,9 @@
             {{ page.title }} &middot; {{ site.data.global.title }}
         {% endif %}
     </title>
+    <meta name="description" content="{{ site.data.global.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>

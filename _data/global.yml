@@ -1,9 +1,9 @@
 # Site Settings
 lang: 'en'
 charset: 'utf-8'
-title: 'mzmls@github'
-google_analytics: 'UA-88462102-1'
-description: 'Hello! Welcome to mzmls.github.io, this site is hosted on github.'
+title: 'Muzamil on Github'
+google_analytics: 'UA-93341006-1'
+description: 'Code repositories by Muzamil Satar hosted on Github'
 url: 'https://mzmls.github.io' # the base hostname & protocol for your site
 
 # Admin Settings

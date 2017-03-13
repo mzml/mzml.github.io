@@ -3,7 +3,8 @@
 
 @import 
     "normalize",
-    "layout",
-    "type",
-    "logo",
-    "nav";
+    "type";
+
+body {
+    background-color: darkslategray;
+}

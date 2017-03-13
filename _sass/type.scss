@@ -2,9 +2,25 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif', serif;
+    color: #FFFFFF;
+    
 }
-body {
+
+h1 {
+    
+}
+
+p {
     font-family: 'Noto Sans', sans-serif;
+    color: #93979E;
+}
+
+#logo {
+    
+}
+
+a {
+    color: #EBCB8B;
 }
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
