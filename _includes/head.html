@@ -2,12 +2,19 @@
     <meta charset="{{ site.data.global.charset }}">
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
     <title>
-        {% if page.title == "home" %}
+        {% if page.title == "home" or page.title == "" %}
             {{ site.data.global.title }}
         {% else %}
             {{ page.title }} &middot; {{ site.data.global.title }}
         {% endif %}
     </title>
+    <meta name="title" content="
+        {% if page.title == "home" or page.title == "" %}
+            {{ site.data.global.title }}
+        {% else %}
+            {{ page.title }} &middot; {{ site.data.global.title }}
+        {% endif %}
+        ">
     <meta name="description" content="{{ site.data.global.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
