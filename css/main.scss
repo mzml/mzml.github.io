@@ -3,8 +3,11 @@
 
 @import 
     "normalize",
-    "type";
+    "type",
+    "layout";
 
 body {
-    background-color: darkslategray;
+    background-color: navajowhite;
+    width: 95%;
+    margin: auto;
 }

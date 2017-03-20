@@ -1,5 +1,3 @@
-# Poole site
-
 Github page of [Muzamil Satar]https://mzmls.github.io.com).
 
 
