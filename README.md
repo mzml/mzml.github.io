@@ -1,4 +1,4 @@
-Github page of [Muzamil Satar]https://mzmls.github.io
+Github page of [Muzamil Satar](https://mzmls.github.io).
 
 
 ## Author
