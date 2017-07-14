@@ -11,5 +11,3 @@ Github page of [Muzamil Satar](https://mzmls.github.io).
 ## License
 
 Open sourced under the [MIT license](LICENSE.md).
-
-<3
