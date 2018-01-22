@@ -15,18 +15,43 @@
 # in the templates via {{ site.myvariable }}.
 title: mzml.io
 email: muzamil@mzml.io
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "Hi! Muzamil here. Check out my resume and contact info."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mzmls
 github_username:  mzmls
+permalink: /:title
+author: Muzamil
+logo: /assets/
+twitter:
+  username: mzmls
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+
+social:
+  name: Muzamil Satar
+  links:
+    - https://twitter.com/mzmls
+    - https://www.facebook.com/mzmls
+    - https://www.linkedin.com/in/mzmls
+    - https://plus.google.com/+MuzamilSatar
+    - https://github.com/mzmls
 
 # Build settings
 markdown: kramdown
+
 plugins:
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
