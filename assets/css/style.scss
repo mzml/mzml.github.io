@@ -1,0 +1,42 @@
+---
+---
+
+
+@import "jekyll-theme-primer";
+
+@media only screen and (min-device-width: 668px) {
+    body {
+        display: table;
+        width: 100%;
+        
+    }
+
+    main {
+        vertical-align: middle;
+        text-align: center;
+        padding: 10% 0 0 0;
+    }
+    .cat-picture {
+        width: 20%;
+        margin-right: auto;
+        align-self: center;
+    }
+
+    .image-container {
+        vertical-align: middle;
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .cat-picture {
+        width: 100%;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+}
