@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: mzml.io
 email: muzamil@mzml.io
-description: "Hi! Muzamil here. Check out my resume and contact info."
+description: "Muzamil's corner of the web. Find out what I am upto and get in contact if you would like to work together."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mzmls
@@ -23,6 +23,7 @@ github_username:  mzmls
 permalink: /:title
 author: Muzamil
 logo: /assets/
+
 twitter:
   username: mzmls
 

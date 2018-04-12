@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 date:   2018-01-16 18:24:41 -0600
 title:  "Hello World!"
 description: This is a description of this post.
