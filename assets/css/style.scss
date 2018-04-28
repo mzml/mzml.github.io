@@ -6,10 +6,35 @@ body * {
     box-sizing: border-box;
 }
 
-h1 {
-    font-family: 'Noto Serif';
+body {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.3em;
+}
+
+h1, h2 {
+    font-family: 'Titillium Web';
 }
 
 p {
-    font-family: 'Noto Sans';
+font-family: 'Didact Gothic';
+}
+
+i {
+    padding: 15px 30px;
+    color: gray;
+}
+
+span {
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        width: 80%;
+        font-size: 1.7em;
+    }
 }
