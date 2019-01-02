@@ -1,2 +1,2 @@
-# mzmls.github.io
-My website hosted on GitHub using Jekyll as a site generator.
+# Source for mzml.io
+My website hosted on GitHub and built with Jekyll.
