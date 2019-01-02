@@ -1,2 +1,2 @@
 # Source for mzml.io
-My website hosted on GitHub and built with Jekyll.
+source code for my personal site hosted on GitHub and built with Jekyll
