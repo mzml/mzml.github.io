@@ -17,12 +17,13 @@ title: mzml.io
 email: muzamil@mzml.io
 description: "Muzamil on the web."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mzmls
-github_username:  mzmls
+github_username:  mzml
 permalink: /:title
 author: Muzamil
 logo: /assets/
+strict_front_matter: true
 
 twitter:
   username: mzmls
