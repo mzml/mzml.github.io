@@ -17,7 +17,7 @@ title: mzml.io
 email: muzamil@mzml.io
 description: "Muzamil on the web."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mzmls
 github_username:  mzml
 permalink: /:title
@@ -54,6 +54,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
