@@ -55,6 +55,13 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-analytics
+
+jekyll_analytics:
+  GoogleAnalytics:         # Add, if you want to track with Google Analytics
+    id: UA-133301975-1     # Required - replace with your tracking id
+    anonymizeIp: false     # Optional - Default: false - set to true for anonymized tracking
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -67,3 +74,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
