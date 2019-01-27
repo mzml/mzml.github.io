@@ -25,9 +25,6 @@ author: Muzamil
 logo: /assets/
 strict_front_matter: true
 
-twitter:
-  username: mzmls
-
 facebook:
   app_id:
   publisher:
@@ -42,6 +39,7 @@ webmaster_verifications:
 
 social:
   name: Muzamil Satar
+  twitter: mzmls
   links:
     - https://twitter.com/mzmls
     - https://www.facebook.com/mzmls
@@ -60,4 +58,4 @@ plugins:
 jekyll_analytics:
   GoogleAnalytics:         # Add, if you want to track with Google Analytics
     id: UA-133301975-1     # Required - replace with your tracking id
-    anonymizeIp: false     # Optional - Default: false - set to true for anonymized tracking
+    anonymizeIp: true     # Optional - Default: false - set to true for anonymized tracking
