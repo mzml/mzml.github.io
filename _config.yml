@@ -18,10 +18,8 @@ email: muzamil@mzml.io
 description: "Muzamil on the web."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mzmls
-github_username:  mzml
 permalink: /:title
-author: Muzamil
+author: Muzamil Satar
 logo: /assets/
 strict_front_matter: true
 
@@ -51,9 +49,5 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-analytics
 
-jekyll_analytics:
-  GoogleAnalytics:         # Add, if you want to track with Google Analytics
-    id: UA-133301975-1     # Required - replace with your tracking id
-    anonymizeIp: true     # Optional - Default: false - set to true for anonymized tracking
+google_analytics: UA-133301975-1
