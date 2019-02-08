@@ -2,20 +2,35 @@
 ---
 @import "rouge.scss";
 
-body * {
-    box-sizing: border-box;
+html {
+    margin: 0%;
+    padding: 0%;
 }
 
 body {
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
     color: #720b0b;
-    font-family: 'Titillium Web';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
 }
 
 main {
     width: 80%;
     margin: 0 auto;
     font-size: 1.9em;
+    grid-area: main;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
 }
 
 a {
