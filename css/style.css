@@ -1,7 +1,3 @@
----
----
-@import "rouge.scss";
-
 html {
     margin: 0%;
     padding: 0%;
@@ -13,15 +9,13 @@ body {
     color: #720b0b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
-    grid-gap: 1.5em;
-    grid-template-areas:    "header"
-                            "main"
-                            "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
 main {
-    width: 80%;
-    margin: auto;
     font-size: 1.9em;
     grid-area: main;
 }
@@ -55,7 +49,6 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     main {
-        width: 80%;
         font-size: 1.3em;
     }
 }
