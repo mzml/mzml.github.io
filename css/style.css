@@ -12,18 +12,14 @@ body {
         "footer";
 }
 
+header {
+    grid-area: header;
+}
+
 main {
     margin: auto;
     font-size: 1.9em;
     grid-area: main;
-}
-
-section {
-    grid-area: section;
-}
-
-header {
-    grid-area: header;
 }
 
 footer {
