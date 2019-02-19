@@ -20,34 +20,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.mzml.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
 author: Muzamil Satar
-logo: /assets/
 strict_front_matter: true
 
-facebook:
-  app_id:
-  publisher:
-  admins:
-
-webmaster_verifications:
-  google:
-  bing:
-  alexa:
-  yandex:
-  baidu:
-
 social:
-  links:
-    twitter:  https://twitter.com/mzmls
-    facebook: https://www.facebook.com/mzmls
-    linkedin: https://www.linkedin.com/in/mzmls
-    gplus:    https://plus.google.com/+MuzamilSatar
-    github:   https://github.com/mzml
+  twitter:  https://twitter.com/mzmls
+  facebook: https://www.facebook.com/mzmls
+  linkedin: https://www.linkedin.com/in/mzmls
+  gplus:    https://plus.google.com/+MuzamilSatar
+  github:   https://github.com/mzml
 
-# Build settings
 markdown: kramdown
-
-sass:
-  style: compressed
 
 plugins:
   - jekyll-seo-tag
