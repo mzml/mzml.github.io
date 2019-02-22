@@ -1,2 +1,2 @@
 # mzml.io
-> source code for my site built with Jekyll
+> source code for www.mzml.io with Jekyll
