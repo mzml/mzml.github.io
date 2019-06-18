@@ -1,2 +1,6 @@
 # mzml.io
-> source code for www.mzml.io with Jekyll
+
+> source </> for [mzml.io][1] built with [Jekyll][2]
+
+[1]: https://mzml.io
+[2]: https://jekyllrb.com/
