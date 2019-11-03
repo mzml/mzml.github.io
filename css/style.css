@@ -5,25 +5,11 @@ body {
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
     color: #720b0b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
 
-header {
-    grid-area: header;
 }
 
 main {
-    margin: auto;
     font-size: 1.9em;
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
 }
 
 a {
