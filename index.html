@@ -5,14 +5,13 @@ title: '/home'
 {% include header.html %}
 <main>
     <section class="bio">
-        <h2>Hi! I'm {{ site.data.bio.name }}.</h2>
-        <p>{{ site.data.bio.bio }} </p>
+        <h2>{{ site.data.bio.intro }}</h2>
+        <p>{{ site.data.bio.snippet }}</p>
     </section>
     <section class="contact">
         <h2>Get in touch:</h2>
-        <p>You can reach me at <a href="mailto:{{ site.data.contact.email }}">hi@mzml.io</a>. Also find me on <a
-                href="{{ site.data.contact.social.linkedin }}">LinkedIn</a> or <a
-                href="{{ site.data.contact.social.github }}">Github</a>.</p>
+        <p>You can reach me via <a href="mailto:{{site.data.contact.email}}">email</a>.</p>
+        <p>Sometimes on <a href="{{ site.data.contact.social.linkedin }}">LinkedIn</a> and <a href="{{ site.data.contact.social.github }}">Github</a>.</p>
     </section>
 </main>
 {% include footer.html %}
