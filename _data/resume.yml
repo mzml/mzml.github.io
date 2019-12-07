@@ -1,3 +1,11 @@
-location: Denver, CO
-skills: full-stack development, software testing, performance engineering, DevOps
-experience: I am over at <a href="https://www.comcasttechnologysolutions.com/">CTS</a> with the video on demand team building services for media ingest and delivery. 
+skills: 
+  software testing:
+  performance engineering:
+  DevOps:
+experience:
+  - company: Comcast Technology Solutions
+    link: https://www.comcasttechnologysolutions.com
+  - company: Aristotle
+    link: https://www.aristotle.com
+  - company: Otixo
+    link: https://www.otixo.com

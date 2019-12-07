@@ -5,13 +5,12 @@ title: '/home'
 {% include header.html %}
 <main>
     <section class="bio">
-        <h2>{{ site.data.bio.intro }}</h2>
-        <p>{{ site.data.bio.snippet }}</p>
+        <h2>{{ site.data.me.intro }}</h2>
+        <p>{{ site.data.me.snippet }}</p>
     </section>
     <section class="contact">
-        <h2>Get in touch:</h2>
-        <p>You can reach me via <a href="mailto:{{site.data.contact.email}}">email</a>.</p>
-        <p>Sometimes on <a href="{{ site.data.contact.social.linkedin }}">LinkedIn</a> and <a href="{{ site.data.contact.social.github }}">Github</a>.</p>
+        <p>Get in touch: <span>show email</span></p>
+        <p>Currently I am at <a href="{{site.data.resume.experience[0].link}}">{{ site.data.resume.experience[0].company }}</a></p>
     </section>
 </main>
 {% include footer.html %}
