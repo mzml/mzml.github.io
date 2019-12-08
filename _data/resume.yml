@@ -1,11 +1,32 @@
-skills: 
+skills:
   software testing:
   performance engineering:
   DevOps:
+
+
 experience:
   - company: Comcast Technology Solutions
+    title: Software Development Engineer in Test
     link: https://www.comcasttechnologysolutions.com
+    date: April 2018 - Present
+    details:
+  - company: Art and Formula
+    title: Solutions Engineer
+    link:
+    date: July 2014 - Present
+    details: 
   - company: Aristotle
+    title: Quality Control Analyst
     link: https://www.aristotle.com
-  - company: Otixo
+    date: March 2015 - June 2017
+    details:
+  - company: Otixo, Inc
+    title: Software Tester
     link: https://www.otixo.com
+    date: September 2012 - February 2014
+    details:
+
+education:
+  school:
+  degree:
+  details:
