@@ -1,7 +1,6 @@
 skills:
-  software testing:
-  performance engineering:
-  DevOps:
+  software development: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
+  performance engineering: Deliver on non-functional requirements. Build quality into development life cycle. 
 
 
 experience:
@@ -10,12 +9,12 @@ experience:
     link: https://www.comcasttechnologysolutions.com
     date: April 2018 - Present
     details:
-  - company: Art by Formula
+  - company: Art and Formula
     title: Solutions Engineer
     link:
-    date: July 2014 - Present
+    date: July 2010 - Present
     details: 
-  - company: Aristotle
+  - company: Aristotle International
     title: Quality Control Analyst
     link: https://www.aristotle.com
     date: March 2015 - June 2017
@@ -27,6 +26,7 @@ experience:
     details:
 
 education:
-  school:
-  degree:
-  details:
+  school: University of Colorado Denver
+  degree: Bachelor of Science, Physics
+  earned: May 2011
+  details: 
