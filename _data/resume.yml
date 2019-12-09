@@ -1,24 +1,30 @@
 skills:
-  software development: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
-  performance engineering: Deliver on non-functional requirements. Build quality into development life cycle. 
-
+  - type: software development
+    details: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
+  - type: performance engineering
+    details: Deliver on non-functional requirements. Build quality into development life cycle.
 
 experience:
   - company: Comcast Technology Solutions
     title: Software Development Engineer in Test
     link: https://www.comcasttechnologysolutions.com
     date: April 2018 - Present
-    details: Support development teams with building and testing media ingest and processing services. 
+    details: Support development teams with building and testing media ingest and processing services.
   - company: Art and Formula
     title: Chief Scientist
     link:
     date: July 2010 - Present
-    details: Research and development. 
+    details: Research and development.
   - company: Aristotle International
     title: Quality Control Analyst
     link: https://www.aristotle.com
     date: March 2015 - June 2017
-    details: Supported team in building SaaS for political organizations. 
+    details: Supported team in building SaaS for political organizations.
+  - company: Quotology
+    title: Software Tester
+    link: http://beta.quotology.com
+    date: October 2014 - January 2015
+    details: Testing web applications.
   - company: Otixo, Inc
     title: Software Tester
     link: https://www.otixo.com

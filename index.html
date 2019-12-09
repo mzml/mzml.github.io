@@ -4,13 +4,39 @@ title: '/home'
 ---
 {% include header.html %}
 <main>
-    <section class="bio">
+    <section class="intro">
         <h2>{{ site.data.me.intro }}</h2>
-        <p>{{ site.data.me.snippet }}</p>
     </section>
-    <section class="contact">
-        <p>Get in touch: <span>show email</span></p>
-        <p>Currently I am at <a href="{{site.data.resume.experience[0].link}}">{{ site.data.resume.experience[0].company }}</a></p>
+    <section class="me">
+        <p>{{ site.data.me.snippet }}</p>
+        <p>Get in touch: <span>{{ site.data.me.email }}</span></p>
+        <p>Checkout the <a href="{{ site.data.me.githublink }}">GitHub streak</a>.</p>
+        <p>Currently I am at <a
+                href="{{site.data.resume.experience[0].link}}">{{ site.data.resume.experience[0].company }}</a></p>
+    </section>
+    <section class="resume">
+        <section class="skills">
+            <p>How can I help?</p>
+            {% for skill in site.data.resume.skills %}
+            <p>{{ skill.type }}</p>
+            <p>{{ skill.details }}</p>
+            {% endfor %}
+        </section>
+        <section class="experience">
+            <p>Work history:</p>
+            {% for experience in site.data.resume.experience %}
+            <p><a href="{{ experience.link }}">{{ experience.company }}</a></p>
+            <p>{{ experience.title }}</p>
+            <p>{{ experience.date }}</p>
+            <p>{{ experience.details }}</p>
+            {% endfor %}
+        </section>
+        <section class="education">
+            <p>Education:</p>
+            <p>{{ site.data.resume.education.school }}</p>
+            <p>{{ site.data.resume.education.degree }}; {{ site.data.resume.education.earned }}</p>
+            <p>{{ site.data.resume.education.details }}</p>
+        </section>
     </section>
 </main>
 {% include footer.html %}

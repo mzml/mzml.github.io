@@ -1,6 +1,6 @@
 ---
 layout: post
-date:   2019-10-01
+date:   2019-12-08
 timezone: America/Denver
 title:  "where to start"
 description: my first brain dump detailing why? what? and how? of mzml.io
