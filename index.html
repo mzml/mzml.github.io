@@ -4,17 +4,17 @@ title: '/home'
 ---
 {% include header.html %}
 <main>
-    <section class="intro">
+    <section id="intro">
         <h2>{{ site.data.me.intro }}</h2>
     </section>
-    <section class="me">
+    <section id="me">
         <p>{{ site.data.me.snippet }}</p>
         <p>Get in touch: <span>{{ site.data.me.email }}</span></p>
-        <p>Checkout the <a href="{{ site.data.me.githublink }}">GitHub streak</a>.</p>
+        <p>Checkout the <a href="{{ site.data.me.githublink }}">GitHub activity</a>.</p>
         <p>Currently I am at <a
                 href="{{site.data.resume.experience[0].link}}">{{ site.data.resume.experience[0].company }}</a></p>
     </section>
-    <section class="resume">
+    <section id="resume">
         <section class="skills">
             <p>How can I help?</p>
             {% for skill in site.data.resume.skills %}
