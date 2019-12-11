@@ -6,23 +6,23 @@ title: '/home'
 <main>
     <section id="intro">
         <h2>{{ site.data.me.intro }}</h2>
-    </section>
-    <section id="me">
         <p>{{ site.data.me.snippet }}</p>
+    </section>
+    <section id="contact">
         <p>Get in touch: <span>{{ site.data.me.email }}</span></p>
-        <p>Checkout the <a href="{{ site.data.me.githublink }}">GitHub activity</a>.</p>
+        <p>Checkout the <a href="{{ site.data.me.github }}">GitHub activity</a>.</p>
         <p>Currently I am at <a
                 href="{{site.data.resume.experience[0].link}}">{{ site.data.resume.experience[0].company }}</a></p>
     </section>
     <section id="resume">
-        <section class="skills">
+        <article class="skills">
             <p>How can I help?</p>
             {% for skill in site.data.resume.skills %}
             <p>{{ skill.type }}</p>
             <p>{{ skill.details }}</p>
             {% endfor %}
-        </section>
-        <section class="experience">
+        </article>
+        <article class="experience">
             <p>Work history:</p>
             {% for experience in site.data.resume.experience %}
             <p><a href="{{ experience.link }}">{{ experience.company }}</a></p>
@@ -30,13 +30,13 @@ title: '/home'
             <p>{{ experience.date }}</p>
             <p>{{ experience.details }}</p>
             {% endfor %}
-        </section>
-        <section class="education">
+        </article>
+        <article class="education">
             <p>Education:</p>
             <p>{{ site.data.resume.education.school }}</p>
             <p>{{ site.data.resume.education.degree }} - {{ site.data.resume.education.earned }}</p>
             <p>{{ site.data.resume.education.details }}</p>
-        </section>
+        </article>
     </section>
 </main>
 {% include footer.html %}

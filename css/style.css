@@ -1,3 +1,13 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::afters {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0 1em;
     padding: 0;
@@ -10,6 +20,11 @@ body {
 
 main {
     font-size: 1.9em;
+}
+
+section + section {
+    padding-top: .1em;
+    padding-bottom: .2em;
 }
 
 a {
