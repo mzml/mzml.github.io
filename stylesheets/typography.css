@@ -1,0 +1,21 @@
+main {
+    font-size: 1.9em;
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+      font-size: small;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    :root {
+        font-size: medium; 
+    }  
+}
+
+@media screen and (min-width: 2560px) {
+    :root {
+        font-size: large;
+    }
+}
