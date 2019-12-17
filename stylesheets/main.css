@@ -43,7 +43,6 @@ a:hover {
 @media screen and (max-width: 425px) {
     :root {
       font-size: small;
-      background-color: blue;
     }
 
     header {
@@ -55,8 +54,6 @@ a:hover {
 @media screen and (min-width: 426px) and (max-width: 1024px) {
     :root {
         font-size: medium; 
-        background-color: red;
-
     }
 
     
@@ -65,8 +62,6 @@ a:hover {
 @media screen and (min-width: 2560px) {
     :root {
         font-size: large;
-        background-color: yellows;
-
     }
 
 }
