@@ -1,3 +1,5 @@
+@import url("reset.css") screen;
+
 :root {
     box-sizing: border-box;
     /* base font that scales */
