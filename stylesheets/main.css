@@ -1,9 +1,7 @@
 @import url("reset.css") screen;
-@import url("typography.css") screen;
 
 :root {
     box-sizing: border-box;
-    /* base font that scales */
 }
 
 *,
@@ -19,6 +17,7 @@ body {
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
     color: #720b0b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 500ms 1s background linear;
 }
 
 a {
@@ -32,9 +31,15 @@ a:hover {
     border-bottom: 3px black solid;
 }
 
+main {
+    font-size: 1.9em;
+}
+
+
+
 @media screen and (max-width: 425px) {
     :root {
-      font-size: small;
+      font-size: medium;
     }
 
     header {
@@ -45,15 +50,15 @@ a:hover {
 
 @media screen and (min-width: 426px) and (max-width: 1024px) {
     :root {
-        font-size: medium; 
+        font-size: large; 
     }
 
     
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1025px) {
     :root {
-        font-size: large;
+        font-size: xx-large;
     }
 
 }
