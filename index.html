@@ -5,7 +5,7 @@ title: '/home'
 {% include header.html %}
 <main>
     <section id="intro">
-        <h2>{{ site.data.me.intro }}</h2>
+        <p>{{ site.data.me.intro }}</p>
         <p>{{ site.data.me.snippet }}</p>
     </section>
     <section id="contact">
@@ -13,14 +13,14 @@ title: '/home'
         <p>Checkout the <a href="{{ site.data.me.github }}">GitHub activity</a>.</p>
     </section>
     <section id="resume">
-        <article class="skills">
+        <article id="skills">
             <p>How can I help?</p>
             {% for skill in site.data.resume.skills %}
             <p>{{ skill.type }}</p>
             <p>{{ skill.details }}</p>
             {% endfor %}
         </article>
-        <article class="experience">
+        <article id="experience">
             <p>Work history:</p>
             {% for experience in site.data.resume.experience %}
             <p><a href="{{ experience.link }}">{{ experience.company }}</a></p>
@@ -29,7 +29,7 @@ title: '/home'
             <p>{{ experience.details }}</p>
             {% endfor %}
         </article>
-        <article class="education">
+        <article id="education">
             <p>Education:</p>
             <p>{{ site.data.resume.education.school }}</p>
             <p>{{ site.data.resume.education.degree }} - {{ site.data.resume.education.earned }}</p>

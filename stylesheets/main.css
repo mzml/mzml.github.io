@@ -1,7 +1,12 @@
-@import url("reset.css") screen;
+@import url("reset.css");
+@import url("//fonts.googleapis.com/css?family=Glegoo&display=swap");
+@viewport {
+    width: device-width;
+}
 
 :root {
     box-sizing: border-box;
+    font-size: 1.15rem;
 }
 
 *,
@@ -11,54 +16,46 @@
 }
 
 body {
-    margin: 0 1em;
-    padding: 0;
-    border: 0;
-    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    background-color: #FFA82E;
     color: #720b0b;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: 500ms 1s background linear;
+    font-family: 'Glegoo', sans-serif;
+    line-height: 1.5;
+    letter-spacing: normal;
+    word-spacing: normal;
+    hyphens: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 1rem;
+    grid-template-areas: "h" "m" "f";
 }
 
-a {
-    color: #720b0b;
-    text-decoration: none;
-    border-bottom: 3px #720b0b dotted;
-}
-
-a:hover {
-    color: black;
-    border-bottom: 3px black solid;
+header {
+    grid-area: h;
 }
 
 main {
-    font-size: 1.9em;
+    grid-area: m;
 }
 
-
-
-@media screen and (max-width: 425px) {
-    :root {
-      font-size: medium;
-    }
-
-    header {
-        display: none;
-    }
-    
+footer {
+    grid-area: f;
 }
 
-@media screen and (min-width: 426px) and (max-width: 1024px) {
-    :root {
-        font-size: large; 
-    }
+a {}
 
-    
-}
+a:link {}
 
-@media screen and (min-width: 1025px) {
-    :root {
-        font-size: xx-large;
-    }
+a:visited {}
 
-}
+a:focus {}
+
+a:hover {}
+
+a:active {}
+
+@media screen and (max-width: 425px) {}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 1025px) {}
