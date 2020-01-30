@@ -1,12 +1,11 @@
-@import url("reset.css");
-@import url("https://fonts.googleapis.com/css?family=Wendy+One|Droid+Sans");
+@import url("https://fonts.googleapis.com/css?family=Vast+Shadow|Noto+Sans");
+
 @viewport {
     width: device-width;
 }
 
 :root {
     box-sizing: border-box;
-    font-size: 1.15rem;
 }
 
 *,
@@ -18,21 +17,36 @@
 body {
     background-color: #FFA82E;
     color: #720b0b;
-    font-family: 'Droid Sans', sans-serif;
-    line-height: 1.5;
-    letter-spacing: normal;
-    word-spacing: normal;
-    hyphens: auto;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-row-gap: 1rem;
     grid-template-areas: "h" "m" "f";
+    font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.logo {
+    font-family: 'Vast Shadow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    align-self: center  ;
+}   
 
 header {
     grid-area: h;
-    font-family: 'Wendy One';
+    display: flex;
+}
+
+nav {
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
 }
 
 main {
@@ -55,12 +69,24 @@ a:hover {}
 
 a:active {}
 
+p { 
+    hyphens: auto;
+}
+
 @media screen and (max-width: 425px) {
     body {
         margin: 0 .275em;
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 1024px) {}
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    body {
+        margin: .5em;
+    }
+}
 
-@media screen and (min-width: 1025px) {}
+@media screen and (min-width: 1025px) {
+    p {
+        hyphens: none;
+    }
+}
