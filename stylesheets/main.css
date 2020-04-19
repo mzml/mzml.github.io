@@ -17,7 +17,6 @@
 body {
     background-color: #FFA82E;
     color: #720b0b;
-    display: grid;
     justify-content: center;
     align-items: center;
     grid-row-gap: 1rem;
@@ -31,31 +30,6 @@ body {
     font-size: xx-large;
     align-self: center  ;
 }   
-
-header {
-    grid-area: h;
-    display: flex;
-}
-
-nav {
-    margin-left: auto;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline;
-}
-
-main {
-    grid-area: m;
-}
-
-footer {
-    grid-area: f;
-}
 
 a {}
 
