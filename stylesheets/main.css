@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Vast+Shadow|Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Headland+One|Noto+Sans");
 
 @viewport {
     width: device-width;
@@ -6,6 +6,7 @@
 
 :root {
     box-sizing: border-box;
+    font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -15,17 +16,14 @@
 }
 
 body {
-    background-color: #FFA82E;
-    color: #720b0b;
     justify-content: center;
     align-items: center;
-    grid-row-gap: 1rem;
-    grid-template-areas: "h" "m" "f";
-    font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin: auto;
 }
 
 .logo {
-    font-family: 'Vast Shadow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Headland One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     font-size: xx-large;
     align-self: center  ;
