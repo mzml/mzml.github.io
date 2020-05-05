@@ -1,3 +1,4 @@
+@import url("normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Headland+One|Noto+Sans");
 
 @viewport {
@@ -15,19 +16,32 @@
     box-sizing: inherit;
 }
 
+
 body {
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "h"
+        "n"
+        "m"
+        "f";
+    justify-items: stretch;
 }
 
-.logo {
-    font-family: 'Headland One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
-    font-size: xx-large;
-    align-self: center  ;
-}   
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+}
 
 a {}
 
@@ -41,24 +55,65 @@ a:hover {}
 
 a:active {}
 
-p { 
+p {
     hyphens: auto;
 }
 
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 320px) {
     body {
-        margin: 0 .275em;
+        grid-template-areas:
+            "h"
+            "n"
+            "m"
+            "f";
+        justify-items: stretch;
+        margin: 0 .75em;
+    }
+
+    header {
+        height: 70vh;
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 1024px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
     body {
-        margin: .5em;
+        grid-template-areas:
+            "h"
+            "n"
+            "m"
+            "f";
+        justify-items: stretch;
+    }
+
+    header {
+        height: 80vh;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    p {
-        hyphens: none;
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    body {
+        grid-template-areas:
+            "h n"
+            "m m"
+            "f f";
+        justify-items: stretch;
+    }
+
+    header {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    body {
+        grid-template-areas:
+            "h h n"
+            "m m m"
+            "f f f";
+    }
+
+    header {
+        height: 100vh;
     }
 }
