@@ -29,6 +29,7 @@ body {
 }
 
 header {
+    height: 100vh;
     grid-area: h;
 }
 
@@ -61,7 +62,7 @@ p {
 }
 
 /* larger mobile */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 321px) {
     body {
         grid-template-areas:
             "h"
@@ -73,12 +74,12 @@ p {
     }
 
     header {
-        height: 70vh;
+        height: 90vh;
     }
 }
 
 /* tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     body {
         grid-template-areas:
             "h"
@@ -103,6 +104,6 @@ p {
     }
 
     header {
-        height: 100vh;
+        height: 7w0vh;
     }
 }
