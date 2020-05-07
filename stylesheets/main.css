@@ -16,7 +16,7 @@
     box-sizing: inherit;
 }
 
-
+/* mobile first */
 body {
     display: grid;
     grid-template-areas:
@@ -25,6 +25,7 @@ body {
         "m"
         "f";
     justify-items: stretch;
+    margin: 0 .55em;
 }
 
 header {
@@ -59,8 +60,8 @@ p {
     hyphens: auto;
 }
 
-
-@media screen and (max-width: 320px) {
+/* larger mobile */
+@media screen and (min-width: 320px) {
     body {
         grid-template-areas:
             "h"
@@ -76,7 +77,8 @@ p {
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+/* tablet */
+@media screen and (min-width: 768px) {
     body {
         grid-template-areas:
             "h"
@@ -91,20 +93,7 @@ p {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-    body {
-        grid-template-areas:
-            "h n"
-            "m m"
-            "f f";
-        justify-items: stretch;
-    }
-
-    header {
-        height: 90vh;
-    }
-}
-
+/* desktop */
 @media screen and (min-width: 1281px) {
     body {
         grid-template-areas:
