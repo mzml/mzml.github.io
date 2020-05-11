@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    height: 100vh;
+    height: 50vh;
     grid-area: h;
 }
 
@@ -50,6 +50,7 @@ p {
     line-height: 1.375em;
     word-spacing: .07em;
     hyphens: auto;
+    font-size: .85em;
 }
 
 a {}

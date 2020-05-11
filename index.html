@@ -20,13 +20,6 @@ title: 'muz on the web'
         </address>
     </section>
     <article id="resume">
-        <section id="skills">
-            <p>How can I help?</p>
-            {% for skill in site.data.resume.skills %}
-            <p>{{ skill.type }}</p>
-            <p>{{ skill.details }}</p>
-            {% endfor %}
-        </section>
         <section id="experience">
             <p>Work history:</p>
             {% for experience in site.data.resume.experience %}
@@ -38,9 +31,11 @@ title: 'muz on the web'
         </section>
         <section id="education">
             <p>Education:</p>
+            {% for experience in site.data.resume.education %}
             <p>{{ site.data.resume.education.school }}</p>
             <p>{{ site.data.resume.education.degree }} - {{ site.data.resume.education.earned }}</p>
             <p>{{ site.data.resume.education.details }}</p>
+            {% endfor %}
         </section>
     </article>
 </main>
