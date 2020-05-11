@@ -25,7 +25,8 @@ body {
         "m"
         "f";
     justify-items: stretch;
-    margin: 0 .55em;
+    margin: 0 auto;
+    width: 95%;
 }
 
 header {
@@ -43,6 +44,12 @@ main {
 
 footer {
     grid-area: f;
+}
+
+p {
+    line-height: 1.375em;
+    word-spacing: .07em;
+    hyphens: auto;
 }
 
 a {}
