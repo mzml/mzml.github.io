@@ -3,12 +3,6 @@ layout: default
 title: 'muz on the web'
 ---
 {% include header.html %}
-<nav class="navbar">
-    <ul>
-        <li><a href="#contact">get in touch</a></li>
-        <li><a href="#resume">resume</a></li>
-    </ul>
-</nav>
 <main>
     <section id="bio">
         <p>{{ site.data.me.bio }}</p>
@@ -31,10 +25,10 @@ title: 'muz on the web'
         </section>
         <section id="education">
             <p>Education:</p>
-            {% for experience in site.data.resume.education %}
-            <p>{{ site.data.resume.education.school }}</p>
-            <p>{{ site.data.resume.education.degree }} - {{ site.data.resume.education.earned }}</p>
-            <p>{{ site.data.resume.education.details }}</p>
+            {% for education in site.data.resume.education %}
+            <p>{{ education.school }}</p>
+            <p>{{ education.degree }} - {{ education.earned }}</p>
+            <p>{{ education.details }}</p>
             {% endfor %}
         </section>
     </article>

@@ -21,7 +21,6 @@ body {
     display: grid;
     grid-template-areas:
         "h"
-        "n"
         "m"
         "f";
     justify-items: stretch;
@@ -30,8 +29,10 @@ body {
 }
 
 header {
-    height: 50vh;
+    font-family: 'Headland One';
+    height: 70vh;
     grid-area: h;
+    justify-items: center;
 }
 
 nav {
@@ -51,6 +52,14 @@ p {
     word-spacing: .07em;
     hyphens: auto;
     font-size: .85em;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+p > .emoji {
+    vertical-align: middle;
 }
 
 a {}
