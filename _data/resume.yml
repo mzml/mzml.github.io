@@ -1,8 +1,8 @@
-# skills:
-#   - type: software development
-#     details: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
-#   - type: performance engineering
-#     details: Deliver on non-functional requirements. Build quality into development life cycle.
+skills:
+  - type: software testing
+    details: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
+  - type: performance engineering
+    details: Deliver on non-functional requirements by automating tests that build quality into the development life cycle.
 
 experience:
   - company: Comcast Technology Solutions

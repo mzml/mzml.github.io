@@ -30,7 +30,7 @@ body {
 
 header {
     font-family: 'Headland One';
-    height: 70vh;
+    height: 100vh;
     grid-area: h;
     justify-items: center;
 }
@@ -121,6 +121,6 @@ p {
     }
 
     header {
-        height: 7w0vh;
+        height: 70vh;
     }
 }

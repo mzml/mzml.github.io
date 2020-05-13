@@ -2,35 +2,10 @@
 layout: default
 title: 'muz on the web'
 ---
-{% include header.html %}
+{% include mainheader.html %}
 <main>
     <section id="bio">
         <p>{{ site.data.me.bio }}</p>
     </section>
-    <section id="contact">
-        <address>
-            <p>Get in touch: <span>{{ site.data.contact.email }}</span></p>
-            <p>Checkout the <a href="{{ site.data.contact.github }}">GitHub activity</a>.</p>
-        </address>
-    </section>
-    <article id="resume">
-        <section id="experience">
-            <p>Work history:</p>
-            {% for experience in site.data.resume.experience %}
-            <p><a href="{{ experience.link }}">{{ experience.company }}</a></p>
-            <p>{{ experience.title }}</p>
-            <p>{{ experience.date }}</p>
-            <p>{{ experience.details }}</p>
-            {% endfor %}
-        </section>
-        <section id="education">
-            <p>Education:</p>
-            {% for education in site.data.resume.education %}
-            <p>{{ education.school }}</p>
-            <p>{{ education.degree }} - {{ education.earned }}</p>
-            <p>{{ education.details }}</p>
-            {% endfor %}
-        </section>
-    </article>
 </main>
 {% include footer.html %}
