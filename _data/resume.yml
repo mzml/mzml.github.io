@@ -1,32 +1,32 @@
 skills:
   - type: software testing
-    details: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
+    details: Supporting teams in releasing code that is worthy of production.
   - type: performance engineering
-    details: Deliver on non-functional requirements by automating tests that build quality into the development life cycle.
+    details: Deliver on beyond-functional requirements by building quality gates in the development process.
 
 experience:
   - company: Comcast Technology Solutions
-    title: Software Development Engineer in Test
+    position: Software Development Engineer in Test
     link: //www.comcasttechnologysolutions.com
     date: April 2018 - Present
     details: Support development teams with building and testing media ingest and processing services.
   - company: Rokh Labs
-    title: Chief Scientist
+    position: Chief Scientist
     link: //rokh.io
     date: July 2017 - Present
     details: Research and development.
   - company: Aristotle International
-    title: Quality Control Analyst
+    position: Quality Control Analyst
     link: //aristotle.com
     date: March 2015 - June 2017
     details: Supported team in building SaaS for political organizations.
   - company: Quotology
-    title: Software Tester
+    position: Software Tester
     link: //beta.quotology.com/wall
     date: October 2014 - January 2015
     details: Testing web application.
   - company: Otixo, Inc
-    title: Software Tester
+    position: Software Tester
     link: //www.otixo.com
     date: September 2012 - February 2014
     details: Testing of web and mobile applications.

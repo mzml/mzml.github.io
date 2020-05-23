@@ -9,7 +9,7 @@
         <p>Experience:</p>
         {% for experience in site.data.resume.experience %}
         <p><a href="{{ experience.link }}">{{ experience.company }}</a></p>
-        <p>{{ experience.title }}</p>
+        <p>{{ experience.position }}</p>
         <p>{{ experience.date }}</p>
         <p>{{ experience.details }}</p>
         {% endfor %}

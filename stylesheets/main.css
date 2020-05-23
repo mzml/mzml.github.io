@@ -50,7 +50,6 @@ footer {
 p {
     line-height: 1.375em;
     word-spacing: .07em;
-    hyphens: auto;
     font-size: .85em;
 }
 
@@ -73,10 +72,6 @@ a:focus {}
 a:hover {}
 
 a:active {}
-
-p {
-    hyphens: auto;
-}
 
 /* larger mobile */
 @media screen and (min-width: 321px) {
