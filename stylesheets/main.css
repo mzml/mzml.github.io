@@ -16,50 +16,15 @@
     box-sizing: inherit;
 }
 
-html {
-    height: 100%;
-    width: 100%;
-}
 
 /* mobile first */
 body {
-    min-height: 100%;
-    min-width: 100%;
-    line-height: 1.375em;
-    word-spacing: .07em;
-}
 
-header {
-}
-
-main {
-}
-
-footer {
-}
-
-p {
-   
-}
-
-h1 {
 }
 
 p > .emoji {
     vertical-align: middle;
 }
-
-a {}
-
-a:link {}
-
-a:visited {}
-
-a:focus {}
-
-a:hover {}
-
-a:active {}
 
 /* larger mobile */
 @media screen and (min-width: 321px) {

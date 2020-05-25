@@ -1,6 +1,8 @@
 .text {
     font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     hyphens: auto;
+    line-height: 1.375em;
+    word-spacing: .07em;
 }
 
 .heading {
