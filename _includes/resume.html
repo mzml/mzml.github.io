@@ -1,25 +1,30 @@
 <article id="resume">
-    <section id="contact">
-        <address>
-            <p>Get in touch: <span>{{ site.data.contact.email }}</span></p>
-            <p>Checkout the <a href="{{ site.data.contact.github }}">GitHub activity</a>.</p>
-        </address>
+    <section id="availability">
+        <p class="text">{{ site.data.me.availability }}:</p>
+        {% for skill in site.data.resume.skills %}
+        <details open>
+            <summary class="text">{{ skill.type }}</summary>
+            <p class="text">
+                {{ skill.details }}
+            </p>
+        </details>
+        {% endfor %}
     </section>
     <section id="experience">
-        <p>Experience:</p>
+        <h2 class="heading">Experience:</h2>
         {% for experience in site.data.resume.experience %}
-        <p><a href="{{ experience.link }}">{{ experience.company }}</a></p>
-        <p>{{ experience.title }}</p>
-        <p>{{ experience.date }}</p>
-        <p>{{ experience.details }}</p>
+        <p class="text">{{ experience.title }}</p>
+        <p class="text"><a href="{{ experience.link }}">{{ experience.company }}</a></p>
+        <p class="text">{{ experience.date }}</p>
+        <p class="text">{{ experience.details }}</p>
         {% endfor %}
     </section>
     <section id="education">
-        <p>Education:</p>
+        <h2 class="heading">Education:</h2>
         {% for education in site.data.resume.education %}
-        <p>{{ education.school }}</p>
-        <p>{{ education.degree }} - {{ education.earned }}</p>
-        <p>{{ education.details }}</p>
+        <p class="text">{{ education.school }}</p>
+        <p class="text">{{ education.degree }} - {{ education.earned }}</p>
+        <p class="text">{{ education.details }}</p>
         {% endfor %}
     </section>
 </article>

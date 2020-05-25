@@ -1,4 +1,5 @@
 @import url("normalize.css");
+@import url("font.css");
 @import url("https://fonts.googleapis.com/css?family=Headland+One|Noto+Sans");
 
 @viewport {
@@ -7,7 +8,6 @@
 
 :root {
     box-sizing: border-box;
-    font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -16,46 +16,33 @@
     box-sizing: inherit;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 /* mobile first */
 body {
-    display: grid;
-    grid-template-areas:
-        "h"
-        "m"
-        "f";
-    justify-items: stretch;
-    margin: 0 auto;
-    width: 95%;
+    min-height: 100%;
+    min-width: 100%;
+    line-height: 1.375em;
+    word-spacing: .07em;
 }
 
 header {
-    font-family: 'Headland One';
-    height: 100vh;
-    grid-area: h;
-    justify-items: center;
-}
-
-nav {
-    grid-area: n;
 }
 
 main {
-    grid-area: m;
 }
 
 footer {
-    grid-area: f;
 }
 
 p {
-    line-height: 1.375em;
-    word-spacing: .07em;
-    hyphens: auto;
-    font-size: .85em;
+   
 }
 
 h1 {
-    font-size: 1.75em;
 }
 
 p > .emoji {
@@ -74,53 +61,17 @@ a:hover {}
 
 a:active {}
 
-p {
-    hyphens: auto;
-}
-
 /* larger mobile */
 @media screen and (min-width: 321px) {
-    body {
-        grid-template-areas:
-            "h"
-            "n"
-            "m"
-            "f";
-        justify-items: stretch;
-        margin: 0 .75em;
-    }
 
-    header {
-        height: 90vh;
-    }
 }
 
 /* tablet */
 @media screen and (min-width: 769px) {
-    body {
-        grid-template-areas:
-            "h"
-            "n"
-            "m"
-            "f";
-        justify-items: stretch;
-    }
 
-    header {
-        height: 80vh;
-    }
 }
 
 /* desktop */
 @media screen and (min-width: 1281px) {
-    body {
-        grid-template-areas:
-            "h h n"
-            "m m m"
-            "f f f";
-    }
 
-    header {
-        height: 70vh;
-    }
 }

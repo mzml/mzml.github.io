@@ -1,8 +1,8 @@
 skills:
-  - type: software testing
-    details: Supporting teams guide their testing. Build quality gates to gain confidence in releasing a product.
+  - type: software engineering
+    details: Support teams develope software by guiding testing. I want to be confident in releasing to production.
   - type: performance engineering
-    details: Deliver on non-functional requirements by automating tests that build quality into the development life cycle.
+    details: Deliver on beyond functional requirements by automating tasks that build quality into the development life cycle.
 
 experience:
   - company: Comcast Technology Solutions
@@ -32,7 +32,7 @@ experience:
     details: Testing of web and mobile applications.
 
 education:
-  - school: University of Colorado Denver
-    degree: Bachelor of Science, Physics
+  - school: University of Colorado, Denver
+    degree: Bachelor of Science in Physics
     earned: May 2011
-    details: Math minor
+    details: I liked the bio-track; math minor

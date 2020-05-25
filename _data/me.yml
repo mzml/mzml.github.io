@@ -1,12 +1,11 @@
 name: Muzamil Satar
 
+greeting:
+    - Hi!
+    - Salaam!
+
 intro: I'm Muzamil
 
-snippet: Welcome to my corner of the web. I am a tester at heart with powers to automate.
+snippet: Welcome to my corner of the web. I am a tester at heart with powers to automate. Sometimes I find bugs and sometimes I create them.
 
-bio: |
-    I advocate for quality in development teams by automating work that enables code to live in production.
-    Sometimes I find software bugs and sometimes I create them.
-    Born in &#58;afghanistan&#58; and now get to &#58;ski&#58; Colorado.
-
-availability: I am available to help.
+availability: I am available to help with

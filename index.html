@@ -2,10 +2,8 @@
 layout: default
 title: 'muz on the web'
 ---
-{% include mainheader.html %}
+{% include header.html %}
 <main>
-    <section id="bio">
-        <p>{{ site.data.me.bio }}</p>
-    </section>
+    {% include resume.html %}
 </main>
 {% include footer.html %}
