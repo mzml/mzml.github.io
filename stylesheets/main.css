@@ -1,5 +1,4 @@
 @import url("normalize.css");
-@import url("font.css");
 @import url("https://fonts.googleapis.com/css?family=Headland+One|Noto+Sans");
 
 @viewport {
@@ -19,7 +18,7 @@
 
 /* mobile first */
 body {
-    max-width: 960px;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -39,5 +38,8 @@ p > .emoji {
 
 /* desktop */
 @media screen and (min-width: 1281px) {
-
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 }
