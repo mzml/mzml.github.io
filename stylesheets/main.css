@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url("https://fonts.googleapis.com/css?family=Headland+One|Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Itim|Jura");
 
 @viewport {
     width: device-width;
@@ -15,11 +15,19 @@
     box-sizing: inherit;
 }
 
+.heading {
+    font-family: Itim;
+}
 
+.text {
+    font-family: Jura;
+}
 /* mobile first */
 body {
     max-width: 95%;
     margin: 0 auto;
+    background-color: black;
+    color: green;
 }
 
 p > .emoji {
