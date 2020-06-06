@@ -1,8 +1,8 @@
 skills:
-  - type: software engineering
-    details: Support teams develope software guided by tests. Continually releasing to production confidently is nirvana.
+  - type: software development
+    details: Advice and assist in developing software guided by tests. Releasing to production confidently is nirvana.
   - type: performance engineering
-    details: Deliver on beyond functional requirements. Automation allows for continually testing, using insights from the results can be used for building better software.
+    details: Deliver on beyond functional requirements. Automation allows for continually testing, insights from the results can be used for building better software.
 
 experience:
   - company: Comcast Technology Solutions
@@ -22,7 +22,7 @@ experience:
     details: Supported team in building SaaS for political organizations.
   - company: Quotology
     position: Software Tester
-    link: //beta.quotology.com/wall
+    link: //quotology.com/wall
     date: October 2014 - January 2015
     details: Testing web application.
   - company: Otixo, Inc
