@@ -22,27 +22,24 @@
 .text {
     font-family: Jura;
 }
+
 /* mobile first */
 body {
     max-width: 95%;
     margin: 0 auto;
     background-color: black;
-    color: green;
+    color: #1AF429;
 }
 
-p > .emoji {
+p>.emoji {
     vertical-align: middle;
 }
 
 /* larger mobile */
-@media screen and (min-width: 321px) {
-
-}
+@media screen and (min-width: 321px) {}
 
 /* tablet */
-@media screen and (min-width: 769px) {
-
-}
+@media screen and (min-width: 769px) {}
 
 /* desktop */
 @media screen and (min-width: 1281px) {
