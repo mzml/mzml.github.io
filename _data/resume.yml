@@ -1,8 +1,8 @@
 skills:
   - type: software development
-    details: Advice and assist in developing software guided by tests. A journey of thousands lines of code should begin with a failing test.
+    details: Advice and assist in developing software guided by tests. A journey of a thousand lines of code should begin with a failing test.
   - type: performance engineering
-    details: Deliver on beyond functional requirements. Automation allows for continuous testing, freeing teams to focus on user experience.
+    details: Deliver on beyond functional requirements. Automation allows for continuous testing, freeing teams to focus on performance improvements.
 
 experience:
   - company: Comcast Technology Solutions
