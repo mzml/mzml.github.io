@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url("https://fonts.googleapis.com/css?family=Itim|Jura");
+@import url("https://fonts.googleapis.com/css?family=Carme|Jura");
 
 @viewport {
     width: device-width;
@@ -16,7 +16,7 @@
 }
 
 .heading {
-    font-family: Itim;
+    font-family: Carme;
 }
 
 .text {
