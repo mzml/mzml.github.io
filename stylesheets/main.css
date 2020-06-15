@@ -35,6 +35,23 @@ p>.emoji {
     vertical-align: middle;
 }
 
+a {
+    color: #1AF429;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    background-color: #555;
+  }
+  
+  a:active {
+    background-color: black;
+  }
+  
+  a:visited {
+    background-color: #ccc;
+  }
+
 /* larger mobile */
 @media screen and (min-width: 321px) {}
 
