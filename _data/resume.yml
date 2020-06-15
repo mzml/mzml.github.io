@@ -11,11 +11,11 @@ experience:
     date: April 2018 - Present
     details: Support development teams with building and testing media ingest and processing services.
   - company: Rokh Labs
-    position: Chief Scientist
+    position: Researcher
     link: //rokh.io
     date: July 2017 - Present
-    details: Research and development.
-  - company: Aristotle International
+    details: Research and development in software.
+  - company: Aristotle
     position: Quality Control Analyst
     link: //aristotle.com
     date: March 2015 - June 2017
@@ -25,11 +25,12 @@ experience:
     link: //quotology.com/wall
     date: October 2014 - January 2015
     details: Testing web application.
-  - company: Otixo, Inc
+  - company: Otixo
     position: Software Tester
     link: //www.otixo.com
     date: September 2012 - February 2014
-    details: Testing of web and mobile applications.
+    details: |
+      Assisted remote development team testing web and mobile applications for a collaboration platform.
 
 education:
   - school: University of Colorado, Denver
