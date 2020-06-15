@@ -19,18 +19,17 @@ experience:
     position: Quality Control Analyst
     link: //aristotle.com
     date: March 2015 - June 2017
-    details: Supported team in building SaaS for political organizations.
+    details: Supported team testing campaign management software for political organizations.
   - company: Quotology
     position: Software Tester
     link: //quotology.com/wall
     date: October 2014 - January 2015
-    details: Testing web application.
+    details: Testing web application for a minimum viable product.
   - company: Otixo
     position: Software Tester
     link: //www.otixo.com
     date: September 2012 - February 2014
-    details: |
-      Assisted remote development team testing web and mobile applications for a collaboration platform.
+    details: Assisted remote development team testing web and mobile applications for a collaboration platform.
 
 education:
   - school: University of Colorado, Denver
