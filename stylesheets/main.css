@@ -11,16 +11,8 @@
 
 *,
 ::before,
-::afters {
+::after {
     box-sizing: inherit;
-}
-
-.heading {
-    font-family: Carme;
-}
-
-.text {
-    font-family: Jura;
 }
 
 /* mobile first */
@@ -29,6 +21,11 @@ body {
     margin: 0 auto;
     background-color: black;
     color: #1AF429;
+    font-family: Jura;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Carme;
 }
 
 p>.emoji {
@@ -38,19 +35,13 @@ p>.emoji {
 a {
     color: #1AF429;
     text-transform: uppercase;
-  }
-  
-  a:hover {
-    background-color: #555;
-  }
-  
-  a:active {
-    background-color: black;
-  }
-  
-  a:visited {
-    background-color: #ccc;
-  }
+}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
 
 /* larger mobile */
 @media screen and (min-width: 321px) {}
