@@ -1,6 +1,8 @@
 skills:
   - type: software development
-    details: Advice and assist in developing software guided by tests.
+    details: |
+      Advice and assist in developing software guided by tests.
+      I've built software with startup and enterprise teams.
   - type: performance engineering
     details: Deliver on beyond functional requirements. Automation allows for continuous testing, freeing teams to focus on performance improvements.
 
