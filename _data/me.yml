@@ -1,8 +1,13 @@
-name: Muzamil
+name: I'm Muzamil
 sayit: (mo-ZA-mil)
 
+background: |
+    I am a seeker at heart wanting to learn more about the technology that is changing our lives.
+    In software development I've found an opportunity to narrow in on a love in life.
+    A journey of a thousand lines of code should begin with a failing test.
+
+
 greeting:
-    - Hi! I'm
     - Salaam!
 
-snippet: I'm a tester with powers to automate.
+snippet: Welcome to my corner of the web.

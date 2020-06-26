@@ -1,6 +1,6 @@
 skills:
   - type: software development
-    details: Advice and assist in developing software guided by tests. A journey of a thousand lines of code should begin with a failing test.
+    details: Advice and assist in developing software guided by tests.
   - type: performance engineering
     details: Deliver on beyond functional requirements. Automation allows for continuous testing, freeing teams to focus on performance improvements.
 

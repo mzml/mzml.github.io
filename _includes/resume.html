@@ -1,20 +1,22 @@
 <article id="resume">
-    <h2 class="">I can help with:</h2>
-    {% for skill in site.data.resume.skills %}
-    <details open>
-        <summary class="">{{ skill.type }}</summary>
-        <p class="">
-            {{ skill.details }}
-        </p>
-    </details>
-    {% endfor %}
+    <section>
+        <h2 class="">Skills:</h2>
+        {% for skill in site.data.resume.skills %}
+        <details open>
+            <summary class="">{{ skill.type }}</summary>
+            <p class="">
+                {{ skill.details }}
+            </p>
+        </details>
+        {% endfor %}
+    </section>
     <section id="experience">
         <h2 class="">Experience:</h2>
         {% for experience in site.data.resume.experience %}
-        <p class="">{{ experience.title }}</p>
         <p class=""><a href="{{ experience.link }}">{{ experience.company }}</a></p>
         <p class="">{{ experience.date }}</p>
-        <p class="">{{ experience.details }}</p>
+        <p class="">{{ experience.position }}</p>
+        <!-- <p class="">{{ experience.details }}</p> -->
         {% endfor %}
     </section>
     <section id="education">

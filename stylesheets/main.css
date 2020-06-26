@@ -43,6 +43,10 @@ a:active {}
 
 a:visited {}
 
+header {
+    height: 100vh;
+}
+
 /* larger mobile */
 @media screen and (min-width: 321px) {}
 
