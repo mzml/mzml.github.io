@@ -1,12 +1,20 @@
+greeting:
+    - Salaam!
+    - Hai!
+    - ':v:'
+
 name: I'm Muzamil
+
 sayit: (mo-ZA-mil)
 
 background: |
-    I am a seeker at heart wanting to learn more about the technologies changing our lives.
+    I am a seeker wanting to understand the technologies changing our lives.
     In software development I've found opportunity to practice a love in life.
     I believe in a journey of a thousand lines of code beginning with a failing test.
-
-greeting:
-    - Salaam!
-
+    
 snippet: Welcome to my corner of the web.
+
+email: hi@mzml.io
+github: https://github.com/mzml
+twitter: https://twitter.com/mzmls
+linkedin: https://www.linkedin.com/in/mzmls/
