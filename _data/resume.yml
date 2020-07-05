@@ -1,17 +1,29 @@
 skills:
   - type: software development
     details: |
-      Advice and assist in developing software guided by tests.
-      I've built software with startup and enterprise teams.
+      Havening built software with startup and enterprise teams I can advice and assist in the development guided by tests.
+    tools:
+      - HTML/CSS
+      - JavaScript
+      - Java
+      - C#
   - type: performance engineering
     details: Deliver on beyond functional requirements. Automation allows for continuous testing, freeing teams to focus on performance improvements.
+    tools:
+    - JMeter
+    - Cucumber
+    - SpecFlow
+    - JUnit
+    - NUnit
+    - Jenkins
+    - Concourse
 
 experience:
   - company: Comcast Technology Solutions
     position: Software Development Engineer in Test
     link: //www.comcasttechnologysolutions.com
     date: April 2018 - Present
-    details: Support development teams with building and testing media ingest and processing services.
+    details: Supporting development teams with building and testing media ingest and processing services.
   - company: Rokh Labs
     position: Researcher
     link: //rokh.io
@@ -26,12 +38,12 @@ experience:
     position: Software Tester
     link: //quotology.com/wall
     date: October 2014 - January 2015
-    details: Testing web application for a minimum viable product.
+    details: Tested web application for a minimum viable product.
   - company: Otixo
     position: Software Tester
     link: //www.otixo.com
     date: September 2012 - February 2014
-    details: Assisted remote development team testing web and mobile applications for a collaboration platform.
+    details: Assisted remote development team testing web and mobile applications.
 
 education:
   - school: University of Colorado, Denver
