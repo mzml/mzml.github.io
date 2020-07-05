@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url("https://fonts.googleapis.com/css?family=Carme|Jura");
+@import url("https://fonts.googleapis.com/css?family=Gafata|Jura");
 
 @viewport {
     width: device-width;
@@ -21,11 +21,11 @@ body {
     margin: 0 auto;
     background-color: black;
     color: #1AF429;
-    font-family: Jura;
+    font-family: 'Jura';
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Carme;
+    font-family: 'Gafata';
 }
 
 p>.emoji {
