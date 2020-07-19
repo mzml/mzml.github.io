@@ -2,21 +2,12 @@ skills:
   - type: software development
     details: |
       Havening built software with startup and enterprise teams I can advice and assist in the development guided by tests.
-    tools:
-      - HTML/CSS
-      - JavaScript
-      - Java
-      - C#
+    tools: |
+      HTML/CSS, JavaScript, Java, C#
   - type: performance engineering
     details: Deliver on beyond functional requirements. Automation allows for continuous testing, freeing teams to focus on performance improvements.
-    tools:
-    - JMeter
-    - Cucumber
-    - SpecFlow
-    - JUnit
-    - NUnit
-    - Jenkins
-    - Concourse
+    tools: |
+      JMeter, Cucumber, SpecFlow, JUnit/NUnit, Jenkins, Concourse, Kubernetes
 
 experience:
   - company: Comcast Technology Solutions
