@@ -17,11 +17,28 @@
 
 /* mobile first */
 body {
+    display: grid;
     max-width: 95%;
     margin: 0 auto;
     background-color: black;
     color: #1AF429;
     font-family: 'Jura';
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
 }
 
 h1, h2, h3, h4, h5, h6 {
