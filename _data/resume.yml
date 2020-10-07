@@ -1,21 +1,21 @@
 skills:
   - type: software development
-    details: |
-      Havening built software with startup and enterprise teams I can advice and assist in the development guided by tests.
-    languages:
-      - HTML/CSS
-      - JavaScript
-      - Java
-      - C#
-    frameworks:
-      - JMeter
-      - Cucumber
-      - SpecFlow
-      - JUnit/NUnit
-    tools: 
-      - Jenkins
-      -  Concourse
-      - Kubernetes
+    snippet: Havening built software with startup and enterprise teams I can advice and assist in the development guided by tests.
+    details:
+      languages:
+        - HTML/CSS
+        - JavaScript
+        - Java
+        - C#
+      frameworks:
+        - JMeter
+        - Cucumber
+        - SpecFlow
+        - JUnit/NUnit
+      tools:
+        - Jenkins
+        - Concourse
+        - Kubernetes
 
 experience:
   - company: Comcast Technology Solutions
@@ -46,7 +46,7 @@ experience:
     date: October 2014 - January 2015
     details: |
       Tested web application for a minimum viable product.
-      The infrastructure was AWS, it gave me a glimpse of running software. 
+      The infrastructure was AWS, it gave me a glimpse of running software.
 
   - company: Otixo
     position: Software Tester

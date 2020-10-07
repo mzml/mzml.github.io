@@ -4,10 +4,7 @@
         {% for skill in site.data.resume.skills %}
         <details open>
             <summary class="">{{ skill.type }}</summary>
-            <p class="">
-                {{ skill.details }}
-            </p>
-            <p>{{ skill.tools }}</p>
+            <p class="">{{ skill.snippet }}</p>
         </details>
         {% endfor %}
     </section>
