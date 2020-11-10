@@ -4,7 +4,7 @@ description: "Muzamil on the web."
 baseurl: ""
 url: "https://www.mzml.io"
 permalink: /:title
-author: Muzamil Satar
+author: Muzamil
 strict_front_matter: true
 
 markdown: kramdown
