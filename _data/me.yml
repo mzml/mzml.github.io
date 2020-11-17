@@ -4,7 +4,7 @@ greeting:
     - ':v:'
 
 background: |
-    I believe in a journey of a thousand lines of code beginning with a failing test.
+    A journey of thousands of lines of code should begin with a failing test.
     
 snippet: Welcome to my corner of the web.
 
