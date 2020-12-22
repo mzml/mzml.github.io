@@ -1,12 +1,6 @@
 # mzml.io
 
-:wave: This is the source for [mzml.io][1] built using [Jekyll][2]. You can get a free website up and running with [GitHub pages][3]. The site is primarily focused for:
-
-* web presence
-* interactive resume
-* publishing on your own site
-
-
+:wave: This is the source code for [mzml.io][1] built using [Jekyll][2] hosted on [GitHub pages][3].
 
 [1]: https://mzml.io
 [2]: https://jekyllrb.com/

@@ -1,6 +1,5 @@
 @import url("normalize.css");
-@import url("https://fonts.googleapis.com/css?family=Gafata|Jura");
-
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Spinnaker&display=swap');
 @viewport {
     width: device-width;
 }
@@ -15,18 +14,17 @@
     box-sizing: inherit;
 }
 
+
 /* mobile first */
+
 body {
     display: grid;
     max-width: 95%;
     margin: 0 auto;
     background-color: black;
     color: #1AF429;
-    font-family: 'Jura';
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    font-family: 'Spinnaker';
+    grid-template-areas: "header" "main" "footer";
 }
 
 header {
@@ -41,8 +39,13 @@ footer {
     grid-area: footer;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gafata';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Jockey One', cursive;
 }
 
 p>.emoji {
@@ -60,16 +63,21 @@ a:active {}
 
 a:visited {}
 
-header {
-}
+header {}
+
 
 /* larger mobile */
+
 @media screen and (min-width: 321px) {}
 
+
 /* tablet */
+
 @media screen and (min-width: 769px) {}
 
+
 /* desktop */
+
 @media screen and (min-width: 1281px) {
     body {
         max-width: 960px;

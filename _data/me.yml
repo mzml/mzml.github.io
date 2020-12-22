@@ -1,11 +1,11 @@
 greeting:
     - Salaam
     - Hi
-    - ':v:'
+    - ":v:"
 
 background: |
     A journey of thousands of lines of code should begin with a failing test.
-    
+
 snippet: Welcome to my corner of the web.
 
 email: hi@mzml.io
