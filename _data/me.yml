@@ -4,9 +4,9 @@ greeting:
     - ":v:"
 
 background: |
-    A journey of thousands of lines of code should begin with a failing test.
+    A journey of a thousand lines of code begins with a failing test.
 
-snippet: Welcome to my corner of the web.
+snippet: Welcome to my corner of the web. I am nuts about software and how to test it.
 
 email: hi@mzml.io
 github: https://github.com/mzml
