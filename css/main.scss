@@ -1,5 +1,7 @@
-@import url("normalize.css");
-@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Spinnaker&display=swap');
+---
+---
+@import "normalize";
+@import "typography";
 
 @viewport {
     width: device-width;
@@ -17,7 +19,6 @@
 
 
 /* mobile first */
-
 body {
     display: grid;
     max-width: 95%;
@@ -25,7 +26,10 @@ body {
     background-color: black;
     color: #1AF429;
     font-family: 'Spinnaker';
-    grid-template-areas: 'header''main''footer';
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
 }
 
 header {
@@ -64,21 +68,15 @@ a:active {}
 
 a:visited {}
 
-header {}
-
-
 /* larger mobile */
-
 @media screen and (min-width: 321px) {}
 
 
 /* tablet */
-
 @media screen and (min-width: 769px) {}
 
 
 /* desktop */
-
 @media screen and (min-width: 1281px) {
     body {
         max-width: 1440px;

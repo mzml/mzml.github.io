@@ -1,12 +1,12 @@
 greeting:
     - Salaam
     - Hi
-    - ":v:"
+
+snippet: Welcome to my corner of the web. I help build software.
 
 background: |
-    A journey of a thousand lines of code begins with a failing test.
-
-snippet: Welcome to my corner of the web. I am nuts about software and how to test it.
+    I've been fortunate to learn how software gets made since 2012 starting out as an intern for a <a href="//www.crunchbase.com/organization/otixo" target="_blank">startup</a>.
+    I am keeping this site as a log and share what I learn.
 
 email: hi@mzml.io
 github: https://github.com/mzml

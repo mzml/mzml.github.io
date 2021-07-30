@@ -3,11 +3,16 @@ title: mzml.io
 description: "Muzamil on the web."
 baseurl: ""
 url: "https://www.mzml.io"
-permalink: /:title
+permalink: pretty
 author: Muzamil
 strict_front_matter: true
+highlighter: pygments
 
 markdown: kramdown
+
+sass:
+  sass_dir: _scss
+  style: compressed
 
 plugins:
   - jekyll-seo-tag
