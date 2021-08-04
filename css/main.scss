@@ -1,6 +1,5 @@
 ---
 ---
-@import "normalize";
 @import "typography";
 
 @viewport {
@@ -69,7 +68,9 @@ a:active {}
 a:visited {}
 
 /* larger mobile */
-@media screen and (min-width: 321px) {}
+@media screen and (min-width: 321px) {
+    
+}
 
 
 /* tablet */
