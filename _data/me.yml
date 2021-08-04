@@ -2,11 +2,10 @@ greeting:
     - Salaam
     - Hi
 
-snippet: Welcome to my corner of the web. I help build software.
+snippet: Welcome to my corner of the web. I help build software and test it.
 
 background: |
-    I've been fortunate to learn how software gets made since 2012 starting out as an intern for a <a href="//www.crunchbase.com/organization/otixo" target="_blank">startup</a>.
-    I am keeping this site as a log and share what I learn.
+    
 
 email: hi@mzml.io
 github: https://github.com/mzml

@@ -2,24 +2,56 @@
 layout: default
 title: 'home'
 ---
-{% include header.html %}
+<header>
+    <nav>
+    </nav>
+</header>
 <main>
     <section id="intro">
         <h1>{{ site.data.me.greeting[1] }}, I'm {{ site.author }}.</h1>
         <small>{{ site.data.me.snippet }}</small>
     </section>
     <section id="contact">
-        <h2 class="heading">Let's network:</h2>
-        <p class="text"><a href="{{ site.data.me.linkedin }}">linkedin</a> |
-            <a href="{{ site.data.me.github }}">github</a> |
-            <a href="{{ site.data.me.twitter }}">twitter</a></p>
-        <p>or shoot me an email {{ site.data.me.email }}</p>
+        <h2 class="contact_heading">Let's network:</h2>
+        <ul class="contact_links">
+            <li><a href="{{ site.data.me.linkedin }}">linkedIn</a></li>
+            <li><a href="{{ site.data.me.github }}">github</a></li>
+            <li><a href="{{ site.data.me.twitter }}">twitter</a></li>
+            <li>or shoot me an email <a href="mailto:{{ site.data.me.email }}">{{ site.data.me.email }}</a></li>
     </section>
-    <section id="background">
-        <p>{{ site.data.me.background }}</p>
-    </section>
-    {% include resume.html %}
-    <p class="text"><small>&copy; {{ site.time | date: '%Y' }} made by Muzamil :v:</small></p>
+    <article id="resume">
+        <section id="background">
+            <p>{{ site.data.me.background }}</p>
+        </section>
+        <section>
+            <h2 class="">Skills:</h2>
+            {% for skill in site.data.resume.skills %}
+            <details open>
+                <summary class="">{{ skill.type }}</summary>
+                <p class="">{{ skill.snippet }}</p>
+            </details>
+            {% endfor %}
+        </section>
+        <section id="experience">
+            <h2 class="">Experience:</h2>
+            {% for experience in site.data.resume.experience %}
+            <p class=""><a href="{{ experience.link }}">{{ experience.company }}</a></p>
+            <p class="">{{ experience.date }}</p>
+            <p class="">{{ experience.position }}</p>
+            <!-- <p class="">{{ experience.details }}</p> -->
+            {% endfor %}
+        </section>
+        <section id="education">
+            <h2 class="">Education:</h2>
+            {% for education in site.data.resume.education %}
+            <p class="">{{ education.school }}</p>
+            <p class="">{{ education.degree }} - {{ education.earned }}</p>
+            <p class="">{{ education.details }}</p>
+            {% endfor %}
+        </section>
+    </article>
     <script src="js/main.js"></script>
 </main>
-{% include footer.html %}
+<footer>
+    <p class="text"><small>&copy; {{ site.time | date: '%Y' }} by Muzamil :v:</small></p>
+</footer>
