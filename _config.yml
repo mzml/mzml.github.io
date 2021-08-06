@@ -6,7 +6,6 @@ url: "https://www.mzml.io"
 permalink: pretty
 author: Muzamil
 strict_front_matter: true
-highlighter: pygments
 
 markdown: kramdown
 

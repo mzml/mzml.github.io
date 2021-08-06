@@ -80,8 +80,5 @@ a:visited {}
     body {
         max-width: 1440px;
         margin: 0 auto;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas:
-            'header main footer';
     }
 }
