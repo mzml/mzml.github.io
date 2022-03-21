@@ -1,60 +1,32 @@
 skills:
-  - type: software development
-    snippet: Having built software with startup and enterprise teams, I can advise and assist in the development guided by tests.
-    details:
-      languages:
-        - HTML/CSS
-        - JavaScript
-        - Java
-        - C#
-      frameworks:
-        - JMeter
-        - Cucumber
-        - SpecFlow
-        - JUnit/NUnit
-      tools:
-        - Jenkins
-        - Concourse
-        - Kubernetes
+  - type: web development
+    using: HTMLL, CSS, and JavaScript to build applications with user experience with a browser
+  - type: backend development
+    using: Java and C# for batch processing and systems development
+  - type: software testing
+    using: JMeter, XUnit, Cucumber, SpecFlow to guide development with tests 
+  - type: DevSecOps
+    using: Jenkins and Concourse to automate tasks for system administration
+  - type: infrastructure 
+    usimg: Aamazon Web Services to manage Kubernetes and networking between datacenters
 
 experience:
   - company: Comcast Technology Solutions
     position: Software Development Engineer in Test
     link: //www.comcasttechnologysolutions.com
     date: April 2018 - Present
-    details: |
-      Supporting development teams building media ingest and processing services.
-
-  - company: Rokh Labs
-    position: Researcher
-    link: //rokh.io
-    date: July 2017 - Present
-    details: |
-      Experiment to provide sustained development needs in Afghanistan.
-
   - company: Aristotle
     position: Quality Control Analyst
     link: //aristotle.com
     date: March 2015 - June 2017
-    details: |
-      Supported team testing campaign management software for political organizations.
-      Advocated for automated testing and supported others in learning to code.
-
   - company: Quotology
     position: Software Tester
     link: //quotology.com/wall
     date: October 2014 - January 2015
-    details: |
-      Tested web application for a minimum viable product.
-      The infrastructure was AWS, it gave me a glimpse of running software.
-
   - company: Otixo
     position: Software Tester
     link: //www.otixo.com
     date: September 2012 - February 2014
-    details: |
-      Assisted development team testing web and mobile applications.
-      I was beginning to understand how software was made and experimented with test automation.
 
 education:
   - school: University of Colorado, Denver

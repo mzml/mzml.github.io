@@ -3,31 +3,20 @@ layout: default
 title: 'home'
 ---
 <header class="">
-        <h1>{{ site.data.me.greeting[1] }}, I'm {{ site.author }}.</h1>
-        <small>{{ site.data.me.snippet }}</small>
+    <h1>Hi, I'm Muzamil.</h1>
+    <small>{{ site.data.me.snippet }}</small>
 </header>
 <main>
     <section id="contact">
-        <h2 class="contact_heading">Let's network:</h2>
+        <h2 class="contact_heading">You can find me on</h2>
         <ul class="contact_links">
             <li><a href="{{ site.data.me.linkedin }}">linkedIn</a></li>
             <li><a href="{{ site.data.me.github }}">github</a></li>
             <li><a href="{{ site.data.me.twitter }}">twitter</a></li>
             <li>or shoot me an email <a href="mailto:{{ site.data.me.email }}">{{ site.data.me.email }}</a></li>
+        </ul>
     </section>
     <article id="resume">
-        <section id="background">
-            <p>{{ site.data.me.background }}</p>
-        </section>
-        <section>
-            <h2 class="">Skills:</h2>
-            {% for skill in site.data.resume.skills %}
-            <details open>
-                <summary class="">{{ skill.type }}</summary>
-                <p class="">{{ skill.snippet }}</p>
-            </details>
-            {% endfor %}
-        </section>
         <section id="experience">
             <h2 class="">Experience:</h2>
             {% for experience in site.data.resume.experience %}
@@ -46,7 +35,6 @@ title: 'home'
             {% endfor %}
         </section>
     </article>
-    <script src="js/main.js"></script>
 </main>
 <footer>
     <p class="text"><small>&copy; {{ site.time | date: '%Y' }} by Muzamil :v:</small></p>

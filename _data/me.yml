@@ -1,11 +1,4 @@
-greeting:
-    - Salaam
-    - Hi
-
-snippet: Welcome to my corner of the web. I help build software and test it.
-
-background: |
-    
+snippet: Welcome to my corner of the web.
 
 email: hi@mzml.io
 github: https://github.com/mzml
