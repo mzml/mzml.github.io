@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
 
-{% include head.html %}
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" media="screen" href="{{ " /css/main.css" | relative_url }}">
+    {% seo %}
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include google_analytics.html %}
+    {% endif %}
+</head>
 
 <body>
     {{ content }}
