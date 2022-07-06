@@ -1,5 +1,7 @@
+# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.238.0/containers/jekyll/.devcontainer/base.Dockerfile
+
 # [Choice] Debian OS version (use bullseye on local arm64/Apple Silicon): bullseye, buster
-ARG VARIANT=bullseye
+ARG VARIANT="2.7-bullseye"
 FROM mcr.microsoft.com/vscode/devcontainers/jekyll:0-${VARIANT}
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
