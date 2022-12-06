@@ -1,10 +1,8 @@
 skills:
-  - type: web development
-    using: HTMLL, CSS, and JavaScript to build applications with user experience with a browser
-  - type: backend development
-    using: Java and C# for batch processing and systems development
   - type: software testing
-    using: JMeter, XUnit, Cucumber, SpecFlow to guide development with tests 
+    using: JMeter, XUnit, Cucumber, SpecFlow to guide development with tests
+  - type: web development
+    using: HTMLL, CSS, and JavaScript to build applications using React
   - type: DevSecOps
     using: Jenkins and Concourse to automate tasks for system administration
   - type: infrastructure 
