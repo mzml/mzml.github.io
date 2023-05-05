@@ -1,6 +1,4 @@
----
----
-@import "typography";
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Spinnaker&display=swap');
 
 @viewport {
     width: device-width;
