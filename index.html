@@ -10,10 +10,13 @@ title: 'home'
     <section id="contact">
         <h2 class="contact_heading">You can find me on</h2>
         <ul class="contact_links">
-            <li><a href="{{ site.data.me.linkedin }}">linkedIn</a></li>
-            <li><a href="{{ site.data.me.github }}">github</a></li>
-            <li><a href="{{ site.data.me.twitter }}">twitter</a></li>
-            <li>or shoot me an email <a href="mailto:{{ site.data.me.email }}">{{ site.data.me.email }}</a></li>
+            {% for contact in site.data.me.contact %}
+            {% if contact.type == "email" %}
+            <li><a href="mailto:{{ contact.url }}">{{ contact.type }}</a></li>
+            {% else %}
+            <li><a href="{{ contact.url }}">{{ contact.type }}</a></li>
+            {% endif %}
+            {% endfor %}
         </ul>
     </section>
     <article id="resume">

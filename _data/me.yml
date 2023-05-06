@@ -1,6 +1,11 @@
 snippet: Welcome to my corner of the web.
 
-email: hi@mzml.io
-github: https://github.com/mzml
-twitter: https://twitter.com/mzmls
-linkedin: https://www.linkedin.com/in/mzml
+contact:
+  - type: email
+    url: hi@mzml.io
+  - type: github
+    url: https://github.com/mzml
+  - type: twitter
+    url: https://twitter.com/mzmls
+  - type: linkedin
+    url: https://www.linkedin.com/in/mzml
