@@ -9,10 +9,14 @@ skills:
     usimg: Aamazon Web Services to manage Kubernetes and networking between datacenters
 
 experience:
+  - company: FirstBank 
+    position: Test Automation Developer
+    link: //www.efirstbank.com
+    date: May 2022 2018 - Present
   - company: Comcast Technology Solutions
     position: Software Development Engineer in Test
     link: //www.comcasttechnologysolutions.com
-    date: April 2018 - Present
+    date: April 2018 - May 2022
   - company: Aristotle
     position: Quality Control Analyst
     link: //aristotle.com

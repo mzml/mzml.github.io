@@ -19,24 +19,6 @@ title: 'home'
             {% endfor %}
         </ul>
     </section>
-    <article id="resume">
-        <section id="experience">
-            <h2 class="">Experience:</h2>
-            {% for experience in site.data.resume.experience %}
-            <p class=""><a href="{{ experience.link }}">{{ experience.company }}</a></p>
-            <p class="">{{ experience.date }}</p>
-            <p class="">{{ experience.position }}</p>
-            {% endfor %}
-        </section>
-        <section id="education">
-            <h2 class="">Education:</h2>
-            {% for education in site.data.resume.education %}
-            <p class="">{{ education.school }}</p>
-            <p class="">{{ education.degree }} - {{ education.earned }}</p>
-            <p class="">{{ education.details }}</p>
-            {% endfor %}
-        </section>
-    </article>
 </main>
 <footer>
     <p class="text"><small>&copy; {{ site.time | date: '%Y' }} :v:</small></p>
