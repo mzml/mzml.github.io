@@ -12,9 +12,9 @@ title: 'home'
         <ul class="contact_links">
             {% for contact in site.data.me.contact %}
             {% if contact.type == "email" %}
-            <li><a href="mailto:{{ contact.url }}"  target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
+            <li><a href="mailto:{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
             {% else %}
-            <li><a href="{{ contact.url }}"  target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
+            <li><a href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
             {% endif %}
             {% endfor %}
         </ul>
