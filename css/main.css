@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
     background-color: black;
     color: #1AF429;
-    font-family: 'Spinnaker';
+    font-family: 'Spinnaker', sans-serif;
     grid-template-areas:
         'header'
         'main'
