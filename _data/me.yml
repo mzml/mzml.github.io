@@ -1,6 +1,4 @@
 contact:
-  - type: email
-    url: hi@mzml.io
   - type: github
     url: https://github.com/mzml
   - type: linkedin
