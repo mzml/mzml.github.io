@@ -2,11 +2,24 @@
 layout: default
 title: 'home'
 ---
-<header class="">
-</header>
-<main>
-    <h1>Hi, I'm Muzamil.</h1>
-    <small>{{ site.data.me.snippet }}</small>
+<main class="container">
+    <hgroup id="intro">
+        <h1>mzml</h1>
+        <p>Bug detective, test automation wizard, crash enthusiast (professionally), quality guardian, and author of bug reports.</p>
+    </hgroup>
+    <section id="about">
+        <p>As a software tester, I help teams build high-quality products for users and ship it faster through exploration and automation. I'm all about smart teamwork, smooth operations, and using real-world feedback to make better choices.</p>
+        <button class="primary">Let's get in touch</button>
+        <button class="secondary">Resume</button>
+    </section>
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <p>Core ability to advocate for quality with test-driven development, automation, and exploration. Currently improving my skills with architecture, performance testing, and AI/ML.</p>
+        <p>I've built automation frameworks for web, mobile, and API testing using Java, C#, JavaScript, and Python. I can use Eclipse, IntelliJ, and VSCode for development environments. I'm comfortable with testing on desktop, TV, and mobile operating systems; using version control; and contributing to CI/CD pipelines.</p>
+    </section>
+    <section id="posts">
+        
+    </section>
     <section id="contact">
         <h2 class="contact_heading">You can find me on</h2>
         <ul class="contact_links">
@@ -20,6 +33,3 @@ title: 'home'
         </ul>
     </section>
 </main>
-<footer>
-    <p class="text"><small>&copy; {{ site.time | date: '%Y' }} :v:</small></p>
-</footer>
