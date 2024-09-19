@@ -17,6 +17,26 @@
 <body>
     {{ content }}
     <footer class="container">
+        <section id="contact">
+            <h2 class="contact_heading">You can find me on</h2>
+            <ul class="contact_links">
+                {% for contact in site.data.me.contact %}
+                {% if contact.type == "email" %}
+                <li><a href="mailto:{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
+                {% else %}
+                <li><a href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+        <small>
+            Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>, <a
+                href="https://picocss.com/" target="_blank" rel="noopener noreferrer">Pico CSS</a>, and <a
+                href="https://p5js.org/" target="_blank" rel="noopener noreferrer">p5.js</a>.
+            <br>
+            The code for this site is <a href="https://github.com/mzml/mzml.github.io" target="_blank"
+                rel="noopener noreferrer">open source</a>.
+        </small>
         <p class="text"><small>&copy; {{ site.time | date: '%Y' }} :v:</small></p>
     </footer>
     <script src="js/main.js"></script>

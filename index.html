@@ -9,7 +9,7 @@ title: 'home'
     </hgroup>
     <section id="about">
         <p>As a software tester, I help teams build high-quality products for users and ship it faster through exploration and automation. I'm all about smart teamwork, smooth operations, and using real-world feedback to make better choices.</p>
-        <button class="primary">Let's get in touch</button>
+        <button class="primary" onclick="window.location.href='mailto:mzml@pm.me'">Let's get in touch</button>
         <button class="secondary">Resume</button>
     </section>
     <section id="skills">
@@ -18,18 +18,8 @@ title: 'home'
         <p>I've built automation frameworks for web, mobile, and API testing using Java, C#, JavaScript, and Python. I can use Eclipse, IntelliJ, and VSCode for development environments. I'm comfortable with testing on desktop, TV, and mobile operating systems; using version control; and contributing to CI/CD pipelines.</p>
     </section>
     <section id="posts">
-        
+        <h2>Posts</h2>
+        <p>I write about software testing, automation, and the latest trends in the industry.</p>
     </section>
-    <section id="contact">
-        <h2 class="contact_heading">You can find me on</h2>
-        <ul class="contact_links">
-            {% for contact in site.data.me.contact %}
-            {% if contact.type == "email" %}
-            <li><a href="mailto:{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
-            {% else %}
-            <li><a href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-    </section>
+    <hr>
 </main>
