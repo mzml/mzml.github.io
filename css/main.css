@@ -1,6 +1,5 @@
 @import "pico/pico.min.css";
-@import "variables.css";
-@import "colors.css";
+@import "theme.css";
 
 /* tablet */
 @media screen and (min-width: 769px) {
