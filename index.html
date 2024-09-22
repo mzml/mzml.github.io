@@ -4,37 +4,31 @@ title: 'home'
 ---
 <main class="container">
     <hgroup id="intro">
-        <h1>Hi I am Muzamil.</h1>
-        <p>Welcome to my corner of the internet!</p>
+        <h1>Hi! I'm Muzamil.</h1>
+        <small>Welcome to my corner of the internet! I can help build quality software guided by tests.</small>
     </hgroup>
     <section id="about">
-        <p>I can help teams build quality software guided by tests.</p>
         <p>I advocate for quality with test-driven development and automation keeping in mind the context of the situation. I've built automation frameworks for web, mobile, and API testing. Currently improving my skills with architecture, performance testing, and AI/ML.</p>
         <button class="primary" onclick="window.location.href='mailto:hi@mzml.io'">Let's get in touch</button>
     </section>
     <section id="skills">
         <h2>Skills & Tools</h2>
-        
         <p>This site uses <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> to generate static pages using HTML/CSS and JavaScript.</p>
-        <details name="reqs">
+        <details class="dropdown" name="reqs">
             <summary>Full Stack Testing</summary>
-            <details class="dropdown" name="reqs">
-                <summary>Web</summary>
-                <ul>
-                    <li>Playwright</li>
-                    <li>Selenium</li>
-                    <li>Cypress</li>
-                </ul>
-            </details>
-            <details class="dropdown" name="reqs">
-                <summary>Mobile</summary>
-                <ul>
-                    <li>Appium</li>
-                    <li>Espresso</li>
-                    <li>XCUITest</li>
-                </ul>
-            </details>
+            <ul>
+                <li>Playwright</li>
+                <li>Selenium</li>
+                <li>Cypress</li>
+            </ul>
         </details>
-       
+        <details class="dropdown" name="reqs">
+            <summary>Mobile</summary>
+            <ul>
+                <li>Appium</li>
+                <li>Espresso</li>
+                <li>XCUITest</li>
+            </ul>
+        </details>
     </section>
 </main>
