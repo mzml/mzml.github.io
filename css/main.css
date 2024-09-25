@@ -5,6 +5,8 @@
 @media screen and (min-width: 769px) {
   body {
     margin: 0 auto;
+    max-width: 769px;
+
   }
 }
 
@@ -12,6 +14,17 @@
 @media screen and (min-width: 1281px) {
   body {
     margin: 0 auto;
-    max-width: 1281px;
+  }
+
+  details {
+    max-width: 50%;
+  }
+
+  form {
+    max-width: 50%;
+
+    button {
+      max-width: 75%;
+    }
   }
 }
