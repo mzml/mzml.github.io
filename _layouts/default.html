@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: "en-US"}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" media="screen" href="{{  "./css/main.css" | relative_url }}">
+    <link rel="stylesheet" media="screen" href="{{  "css/main.css" | relative_url }}">
     {% seo %}
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include google_analytics.html %}
@@ -14,9 +14,28 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="container">
+        <h1>mzml</h1>
+    </header>
     {{ content }}
-    <footer></footer>
+    <footer class="container">
+        <section id="contact">
+            <h2 class="contact_heading">You can find me on</h2>
+            <ul class="contact_links">
+                {% for contact in site.data.me.contact %}
+                {% if contact.type == "email" %}
+                <li><a href="mailto:{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
+                {% else %}
+                <li><a href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.type }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+        <small>
+            The code for this ite is available at <a href="https://github.com/mzml/mzml.github.io" target="_blank" rel="noopener noreferrer">github</a>.
+        </small>
+        <p class="text"><small>&copy; {{ site.time | date: '%Y' }} :v:</small></p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 
