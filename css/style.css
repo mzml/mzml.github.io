@@ -42,6 +42,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+
+}
+
 @media (min-width: 576px) {
     :root {
         --pico-font-size: 106.25%;
@@ -228,4 +232,4 @@ details summary[role=button]:not(.outline)::after {
 
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
-  }
+}
