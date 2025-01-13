@@ -3,45 +3,47 @@ layout: default
 title: 'home'
 ---
 <main>
+
     <hgroup>
         <h1 class="">Hi! I'm Muzamil.</h1>
         <p>
             Welcome to my corner of the web.
-            I have over five years of experience in software development with focus on testing.
+            I have over five years of experience in software development with a focus on testing.
             I can help with <a style="color: #17A6D2;">automating business processes</a> and
             <a style="color: #17A6D2;">building software guided by testing</a>.
         </p>
-        <br>
-        <button style="color: #f0f1f3; margin-top: 1%;" class="animate__animated animate__bounceIn"
-            onclick="window.location.href='https://calendly.com/muz-mzml/15-minute-chat'">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                width="32" height="32" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M6 15h12M6 6h12m-6 12h.01M7 21h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1Z" />
-            </svg>
-            LET'S TALK
-        </button>
     </hgroup>
-    <br>
+
     <h2 style="text-align: center;">Services Offered</h2>
+
+    <details name="testing">
+        <summary>
+            <h3>Automation</h3>
+        </summary>
+        <div class="grid">
+            <p>Automate a specific repetitive task or an entire workflow.</p>
+        </div>
+    </details>
+    <hr>
+
     <details name="testing">
         <summary>
             <h3>Application Testing</h3>
         </summary>
-        <p>Identify problems in software, reducing implementation risks and maximizing user satisfaction.</p>
-        <!-- <div class="grid">
-            <p>hello world</p>
-            <p>how are</p>
-        </div> -->
+        <div class="grid">
+            <p>Identify problems in software, reducing implementation risks and maximizing user satisfaction.</p>
+        </div>
     </details>
     <hr>
+
     <details name="testing">
         <summary>
             <h3>Automated Testing</h3>
         </summary>
-        <p>In order to achieve a higher efficiency in the continuous release of new versions.</p>
+        <p>Achieve a higher efficiency in the continuous release of new versions.</p>
     </details>
     <hr>
+
     <details name="testing">
         <summary>
             <h3>
@@ -51,6 +53,7 @@ title: 'home'
         <p>Identify bottlenecks through performance, load, and stress testing.</p>
     </details>
     <hr>
+
     <details name="testing">
         <summary>
             <h3>
@@ -59,5 +62,18 @@ title: 'home'
         </summary>
         <p>Avoid any potential cyber attacks threatening your business.</p>
     </details>
+    <hr>
+
+    <div class="grid">
+        <button style="margin-top: 5%; color: #f0f1f3;" class="animate__animated animate__bounceIn"
+            onclick="window.location.href='https://calendly.com/muz-mzml/15-minute-chat'">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="32" height="32" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 15h12M6 6h12m-6 12h.01M7 21h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1Z" />
+            </svg>
+            LET'S TALK
+        </button>
+    </div>
 
 </main>
