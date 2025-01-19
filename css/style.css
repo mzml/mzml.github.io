@@ -228,7 +228,7 @@ details summary[role=button]:not(.outline)::after {
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0;
 }
