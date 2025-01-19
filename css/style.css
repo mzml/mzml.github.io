@@ -42,8 +42,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {}
-
 @media (min-width: 576px) {
     :root {
         --pico-font-size: 106.25%;
@@ -228,6 +226,24 @@ details summary[role=button]:not(.outline)::after {
     filter: brightness(0) invert(1);
 }
 
-.animate__animated.animate__bounce {
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.wrapper>p {
+    list-style-type: none;
+    display: inline-block;
+    min-width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-style: dotted;
+    border-color: #d24317;
+    padding: 1em;
+}
+
+.animate__animated.animate__bounceIn {
     --animate-duration: 2s;
 }
