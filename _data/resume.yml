@@ -6,7 +6,7 @@ skills:
   - type: DevSecOps
     using: Jenkins and Concourse to automate tasks for system administration
   - type: infrastructure 
-    usimg: Aamazon Web Services to manage Kubernetes and networking between datacenters
+    using: Aamazon Web Services to manage Kubernetes and networking between datacenters
 
 experience:
   - company: FirstBank 

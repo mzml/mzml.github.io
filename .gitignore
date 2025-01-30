@@ -6,3 +6,4 @@ drafts/
 .vscode/
 vendor/
 Gemfile.lock
+.bundle
