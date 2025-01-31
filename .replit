@@ -6,3 +6,8 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "bundle exec jekyll serve --watch"]
+
+[[ports]]
+localPort = 4000
+externalPort = 80
+exposeLocalhost = true
