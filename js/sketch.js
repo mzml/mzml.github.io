@@ -9,15 +9,10 @@ function setup() {
   canvas.style('z-index', '-1');
   
   // Logo canvas
-  let logoContainer = document.querySelector('nav ul li');
+  let logoContainer = document.querySelector('#logoContainer');
   if (logoContainer) {
     logoCanvas = createGraphics(LOGO_SIZE, LOGO_SIZE);
-    let logoElement = document.createElement('div');
-    logoElement.id = 'logoCanvas';
-    logoElement.style.width = LOGO_SIZE + 'px';
-    logoElement.style.height = LOGO_SIZE + 'px';
-    logoContainer.appendChild(logoElement);
-    logoCanvas.parent(logoElement);
+    logoCanvas.parent(logoContainer);
   }
 }
 
