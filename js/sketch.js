@@ -9,14 +9,13 @@ function setup() {
   canvas.style('z-index', '-1');
   
   // Logo canvas
-  logoCanvas = createGraphics(LOGO_SIZE, LOGO_SIZE);
   let logoContainer = document.querySelector('nav svg');
   if (logoContainer) {
     logoContainer.remove();
     let logoElement = document.createElement('canvas');
     logoElement.id = 'logoCanvas';
     document.querySelector('nav ul li').appendChild(logoElement);
-    logoCanvas = createCanvas(LOGO_SIZE, LOGO_SIZE, logoElement);
+    logoCanvas = createGraphics(LOGO_SIZE, LOGO_SIZE, logoElement);
   }
 }
 
