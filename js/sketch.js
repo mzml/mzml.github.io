@@ -1,4 +1,6 @@
 
+const LOGO_SIZE = 64;
+
 function setup() {
   const logoCanvas = createCanvas(LOGO_SIZE, LOGO_SIZE);
   logoCanvas.parent('logoContainer');
