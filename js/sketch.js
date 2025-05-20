@@ -1,4 +1,4 @@
-let t = 0;
+
 let cellSize = 40;
 let colors;
 
@@ -8,51 +8,46 @@ function setup() {
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
 
+  // Complementary colors to #d24317 (orange-red), #d24317 (orange-red), and #969eaf (gray-blue)
   colors = [
-    color('#1E90FF'), // Blue
-    color('#FFA500'), // Orange
-    color('#50C878'), // Green
-    color('#8B4513'), // Brown
-    color('#FFFFFF')  // White
+    color('#2C9CE8'),  // Complement to #d24317
+    color('#17BCB2'),  // Complement to #d24317
+    color('#696150')   // Complement to #969eaf
   ];
 
   noFill();
   strokeWeight(3);
-  loop();
+  noLoop();
 }
 
 function windowResized() {
   const headerWidth = document.getElementById("header").offsetWidth;
   resizeCanvas(headerWidth, 64);
+  drawPattern();
 }
 
-function drawInterlacingPattern(x, y) {
-  push();
-  translate(x, y);
-
-  // Draw the interlacing lines
-  for(let i = 0; i < colors.length - 1; i++) {
-    stroke(colors[i]);
-    beginShape();
-    for(let x = -cellSize; x <= cellSize; x += 5) {
-      let y = sin(x * 0.1 + t + i * TWO_PI/4) * 20;
-      vertex(x, y);
+function drawPattern() {
+  background(255, 255, 255, 0);
+  
+  for(let x = 0; x < width + cellSize; x += cellSize) {
+    push();
+    translate(x, height/2);
+    
+    for(let i = 0; i < colors.length; i++) {
+      stroke(colors[i]);
+      beginShape();
+      for(let x = -cellSize; x <= cellSize; x += 5) {
+        let y = sin(x * 0.1 + i * TWO_PI/3) * 20;
+        vertex(x, y);
+      }
+      endShape();
     }
-    endShape();
+    pop();
   }
-
-  pop();
 }
 
 function draw() {
-  background(255, 255, 255, 0);
-
-  // Create continuous pattern across width
-  for(let x = 0; x < width + cellSize; x += cellSize) {
-    drawInterlacingPattern(x, height/2);
-  }
-
-  t += 0.02;
+  drawPattern();
 }
 
 const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
