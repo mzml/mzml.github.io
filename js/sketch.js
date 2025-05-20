@@ -1,6 +1,8 @@
 
 let t = 0;
 let colors;
+let initialOffsets = [];
+let amplitudes = [];
 
 function setup() {
     const headerWidth = document.getElementById("header").offsetWidth;
@@ -9,13 +11,20 @@ function setup() {
     background(255, 255, 255, 0);
     canvas.parent("logo-container");
     
-    // Create complementary color palette
+    // Create complementary color palette with slight random variations
+    const baseColor = color('#d24317');
     colors = [
-        color('#d24317'), // Original orange-red
-        color('#17d243'), // Complementary green
-        color('#d21769'), // Analogous purple-red
-        color('#d29217')  // Analogous orange
+        color(red(baseColor) + random(-20, 20), green(baseColor) + random(-20, 20), blue(baseColor) + random(-20, 20)),
+        color('#17d243'),
+        color('#d21769'),
+        color('#d29217')
     ];
+    
+    // Random initial conditions
+    for(let i = 0; i < 4; i++) {
+        initialOffsets.push(random(TWO_PI));
+        amplitudes.push(random(15, 25));
+    }
     
     loop();
 }
@@ -36,11 +45,11 @@ function drawLogo() {
         beginShape();
         vertex(0, height/2);
         
-        let offset = (t + (i * PI/2)) % TWO_PI;
+        let offset = (t + initialOffsets[i]) % TWO_PI;
         let cx1 = width * 0.33;
-        let cy1 = height/2 + sin(offset) * 20;
+        let cy1 = height/2 + sin(offset) * amplitudes[i];
         let cx2 = width * 0.66;
-        let cy2 = height/2 + sin(offset + PI) * 20;
+        let cy2 = height/2 + sin(offset + PI) * amplitudes[i];
         
         bezierVertex(cx1, cy1, cx2, cy2, width, height/2);
         endShape();
