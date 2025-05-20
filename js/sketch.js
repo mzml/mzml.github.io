@@ -1,48 +1,26 @@
-
-let letters = ['m', 'z', 'm', 'l'];
-let letterPositions = [];
-let colors = [];
-
 function setup() {
   let canvas = createCanvas(64, 64);
   canvas.id("logo-canvas");    
+  background(255, 255, 255, 0);
   canvas.parent("logo-container");
-  textSize(16);
-  textAlign(CENTER, CENTER);
-  
-  // Initialize letter positions and colors
-  for(let i = 0; i < letters.length; i++) {
-    letterPositions.push({
-      x: random(width),
-      y: random(height),
-      vx: random(-1, 1),
-      vy: random(-1, 1)
-    });
-    colors.push({
-      r: random(255),
-      g: random(255),
-      b: random(255)
-    });
+  drawLogo();
+  noLoop();
+}
+
+function drawLogo() {
+strokeWeight(2);
+  for (let i = 0; i < 50; i++) {
+      stroke(random(255), random(255), random(255));
+      strokeWeight(random(1, 3));
+      line(random(width), random(height), random(width), random(height));
   }
 }
 
-function draw() {
-  background(255, 255, 255, 0);
-  
-  for(let i = 0; i < letters.length; i++) {
-    // Update position
-    letterPositions[i].x += letterPositions[i].vx;
-    letterPositions[i].y += letterPositions[i].vy;
-    
-    // Bounce off edges
-    if(letterPositions[i].x > width || letterPositions[i].x < 0) letterPositions[i].vx *= -1;
-    if(letterPositions[i].y > height || letterPositions[i].y < 0) letterPositions[i].vy *= -1;
-    
-    // Draw letter
-    fill(colors[i].r, colors[i].g, colors[i].b);
-    text(letters[i], letterPositions[i].x, letterPositions[i].y);
-  }
+function windowResized() {
+//resizeCanvas(windowWidth, windowHeight)
 }
+
+
 
 const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
 
@@ -57,3 +35,5 @@ const observer = new IntersectionObserver((entries) => {
 elementsToAnimate.forEach(element => {
     observer.observe(element);
 });
+
+
