@@ -1,90 +1,76 @@
-
-let angle;
+let gridSize;
 let colors;
-let numShapes = 16;
-let rotationSpeed = 0.001;
+let angle;
+let t = 0;
 
 function setup() {
   const headerWidth = document.getElementById("header").offsetWidth;
   let canvas = createCanvas(headerWidth, 64);
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
-  
-  angle = TWO_PI / numShapes;
-  
-  // Color palette inspired by Islamic art
+
+  // Colors based on the image
   colors = [
-    color('#1a237e'), // Deep blue
-    color('#4fc3f7'), // Light blue
-    color('#ffd700'), // Gold
-    color('#ffffff'), // White
-    color('#00695c')  // Dark teal
+    color('#8B4513'),  // Brown
+    color('#17d243'),  // Green
+    color('#1E90FF'),  // Blue
+    color('#FFA500'),  // Orange
+    color('#FFFFFF')   // White
   ];
-  
-  noLoop();
+
+  gridSize = height/2;
+  angle = TWO_PI / 12;  // 12-pointed star
+  loop();
 }
 
 function windowResized() {
   const headerWidth = document.getElementById("header").offsetWidth;
   resizeCanvas(headerWidth, 64);
-  redraw();
 }
 
-function drawPattern(x, y, radius, layers) {
+function drawStar(x, y, size) {
   push();
   translate(x, y);
-  
-  // Draw multiple layers of the pattern
-  for(let layer = layers; layer > 0; layer--) {
-    let currentRadius = radius * (layer/layers);
-    
-    // Main star pattern
-    beginShape();
-    for(let i = 0; i < numShapes; i++) {
-      let a = angle * i;
-      let r = currentRadius;
-      let x1 = cos(a) * r;
-      let y1 = sin(a) * r;
-      vertex(x1, y1);
-      
-      // Create pointed star effect
-      let midAngle = a + angle/2;
-      let midRadius = r * 0.4;
-      let x2 = cos(midAngle) * midRadius;
-      let y2 = sin(midAngle) * midRadius;
-      vertex(x2, y2);
-    }
-    endShape(CLOSE);
-    
-    // Decorative circles
-    noFill();
+  rotate(t * 0.01);
+
+  // Draw main star pattern
+  for(let i = 0; i < 12; i++) {
+    push();
+    rotate(i * angle);
+    stroke(colors[i % colors.length]);
     strokeWeight(1);
-    stroke(colors[layer % colors.length]);
-    circle(0, 0, currentRadius * 1.5);
-    
-    // Add geometric details
-    for(let i = 0; i < numShapes; i++) {
-      let a = angle * i;
-      push();
-      rotate(a);
-      stroke(colors[(layer + 2) % colors.length]);
-      line(currentRadius * 0.3, 0, currentRadius * 0.7, 0);
-      pop();
-    }
+    noFill();
+
+    // Draw geometric elements
+    beginShape();
+    vertex(0, 0);
+    vertex(size * 0.5, 0);
+    vertex(size * 0.4, size * 0.2);
+    endShape(CLOSE);
+
+    // Draw connecting lines
+    line(size * 0.3, 0, size * 0.3, size * 0.3);
+    pop();
   }
+
+  // Draw central circle
+  fill(colors[3]);
+  noStroke();
+  circle(0, 0, size * 0.2);
+
   pop();
 }
 
 function drawLogo() {
   background(255, 255, 255, 0);
-  
-  // Draw patterns across the canvas
-  let patternSize = height * 0.8;
-  let spacing = patternSize * 1.2;
-  
-  for(let x = spacing/2; x < width; x += spacing) {
-    drawPattern(x, height/2, patternSize/2, 3);
+
+  // Draw repeating pattern
+  let spacing = gridSize * 1.2;
+  for(let x = spacing/2; x < width + spacing; x += spacing) {
+    drawStar(x, height/2, gridSize);
   }
+
+  t += 0.1;
 }
 
 function draw() {
@@ -96,10 +82,7 @@ const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add(
-        "animate__animated",
-        "animate__bounceIn"
-      );
+      entry.target.classList.add("animate__animated", "animate__bounceIn");
     }
   });
 });
