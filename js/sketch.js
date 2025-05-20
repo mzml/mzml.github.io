@@ -4,7 +4,7 @@ let colors;
 
 function setup() {
   const headerWidth = document.getElementById("header").offsetWidth;
-  let canvas = createCanvas(headerWidth, 64);
+  let canvas = createCanvas(headerWidth, windowHeight * 0.2);
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
 
@@ -25,7 +25,7 @@ function generateRandomColors() {
 
 function windowResized() {
   const headerWidth = document.getElementById("header").offsetWidth;
-  resizeCanvas(headerWidth, 64);
+  resizeCanvas(headerWidth, windowHeight * 0.2);
   generateRandomColors();
   drawPattern();
 }
