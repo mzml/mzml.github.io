@@ -1,6 +1,8 @@
 
 let gridSize;
 let colors;
+let rotationOffset;
+let patternSizes;
 
 function setup() {
   const headerWidth = document.getElementById("header").offsetWidth;
@@ -8,16 +10,20 @@ function setup() {
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
   
-  // Create color palette based on the orange theme
+  // Random rotation offset for each refresh
+  rotationOffset = random(TWO_PI);
+  
+  // Create color palette with random variations
   const baseColor = color('#d24317');
   colors = [
-    color('#d24317'),
+    color(red(baseColor) + random(-20, 20), green(baseColor) + random(-20, 20), blue(baseColor) + random(-20, 20)),
     color('#17d243'),
-    color('#d21769'),
+    color(random(200, 255), random(20, 50), random(50, 100)),
     color('#d29217')
   ];
   
   gridSize = height/2;
+  patternSizes = Array(Math.ceil(headerWidth/gridSize)).fill().map(() => random(0.8, 1.2));
   loop();
 }
 
@@ -27,9 +33,10 @@ function windowResized() {
   gridSize = height/2;
 }
 
-function drawIslamicPattern(x, y, size) {
+function drawIslamicPattern(x, y, size, index) {
   push();
   translate(x, y);
+  rotate(rotationOffset * index);
   
   // Draw base circle
   noFill();
@@ -38,7 +45,7 @@ function drawIslamicPattern(x, y, size) {
   // Draw geometric pattern
   for(let i = 0; i < 8; i++) {
     stroke(colors[i % colors.length]);
-    rotate(PI/4);
+    rotate(PI/4 + sin(index) * 0.1);
     line(0, 0, size/2, 0);
     line(size/3, -size/6, size/3, size/6);
   }
@@ -59,9 +66,11 @@ function drawIslamicPattern(x, y, size) {
 function drawLogo() {
   clear();
   
-  // Draw repeating pattern
+  // Draw repeating pattern with varying sizes
+  let index = 0;
   for(let x = gridSize/2; x < width; x += gridSize) {
-    drawIslamicPattern(x, height/2, gridSize);
+    drawIslamicPattern(x, height/2, gridSize * patternSizes[index], index);
+    index++;
   }
 }
 
