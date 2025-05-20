@@ -1,80 +1,87 @@
 
-let t = 0;
+let gridSize;
 let colors;
-let initialOffsets = [];
-let amplitudes = [];
 
 function setup() {
-    const headerWidth = document.getElementById("header").offsetWidth;
-    let canvas = createCanvas(headerWidth, 64);
-    canvas.id("logo-canvas");
-    background(255, 255, 255, 0);
-    canvas.parent("logo-container");
-    
-    // Create complementary color palette with slight random variations
-    const baseColor = color('#d24317');
-    colors = [
-        color(red(baseColor) + random(-20, 20), green(baseColor) + random(-20, 20), blue(baseColor) + random(-20, 20)),
-        color('#17d243'),
-        color('#d21769'),
-        color('#d29217')
-    ];
-    
-    // Random initial conditions
-    for(let i = 0; i < 4; i++) {
-        initialOffsets.push(random(TWO_PI));
-        amplitudes.push(random(15, 25));
-    }
-    
-    loop();
+  const headerWidth = document.getElementById("header").offsetWidth;
+  let canvas = createCanvas(headerWidth, 64);
+  canvas.id("logo-canvas");
+  canvas.parent("logo-container");
+  
+  // Create color palette based on the orange theme
+  const baseColor = color('#d24317');
+  colors = [
+    color('#d24317'),
+    color('#17d243'),
+    color('#d21769'),
+    color('#d29217')
+  ];
+  
+  gridSize = height/2;
+  loop();
 }
 
 function windowResized() {
-    const headerWidth = document.getElementById("header").offsetWidth;
-    resizeCanvas(headerWidth, 64);
+  const headerWidth = document.getElementById("header").offsetWidth;
+  resizeCanvas(headerWidth, 64);
+  gridSize = height/2;
+}
+
+function drawIslamicPattern(x, y, size) {
+  push();
+  translate(x, y);
+  
+  // Draw base circle
+  noFill();
+  strokeWeight(1);
+  
+  // Draw geometric pattern
+  for(let i = 0; i < 8; i++) {
+    stroke(colors[i % colors.length]);
+    rotate(PI/4);
+    line(0, 0, size/2, 0);
+    line(size/3, -size/6, size/3, size/6);
+  }
+  
+  // Draw central star
+  beginShape();
+  for(let i = 0; i < 8; i++) {
+    let angle = i * TWO_PI/8;
+    let sx = cos(angle) * size/4;
+    let sy = sin(angle) * size/4;
+    vertex(sx, sy);
+  }
+  endShape(CLOSE);
+  
+  pop();
 }
 
 function drawLogo() {
-    clear();
-    noFill();
-    
-    for(let i = 0; i < 4; i++) {
-        stroke(colors[i]);
-        strokeWeight(2);
-        
-        beginShape();
-        vertex(0, height/2);
-        
-        let offset = (t + initialOffsets[i]) % TWO_PI;
-        let cx1 = width * 0.33;
-        let cy1 = height/2 + sin(offset) * amplitudes[i];
-        let cx2 = width * 0.66;
-        let cy2 = height/2 + sin(offset + PI) * amplitudes[i];
-        
-        bezierVertex(cx1, cy1, cx2, cy2, width, height/2);
-        endShape();
-    }
-    
-    t += 0.02;
+  clear();
+  
+  // Draw repeating pattern
+  for(let x = gridSize/2; x < width; x += gridSize) {
+    drawIslamicPattern(x, height/2, gridSize);
+  }
 }
 
 function draw() {
-    drawLogo();
+  drawLogo();
 }
 
 const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add(
-                "animate__animated",
-                "animate__bounceIn"
-            );
-        }
-    });
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add(
+        "animate__animated",
+        "animate__bounceIn"
+      );
+    }
+  });
 });
 
 elementsToAnimate.forEach((element) => {
-    observer.observe(element);
+  observer.observe(element);
 });
