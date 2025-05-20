@@ -1,8 +1,6 @@
 
-let pattern = [];
+let lines = [];
 let colors;
-let segmentHeight;
-let patternWidth;
 let t = 0;
 
 function setup() {
@@ -11,29 +9,27 @@ function setup() {
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
   
-  // Base colors
+  // Complementary colors
   colors = [
-    color(0), // Black
-    color('#d24317'), // Orange accent
+    color('#d24317'), // Original orange
+    color('#17d243'), // Complement 1
+    color('#969eaf')  // Specified gray
   ];
   
-  patternWidth = 30;
-  segmentHeight = height/2;
-  
-  // Generate random pattern parameters
-  generatePattern();
+  // Generate random lines
+  generateLines();
   
   loop();
 }
 
-function generatePattern() {
-  pattern = [];
-  for(let i = 0; i < 6; i++) {
-    pattern.push({
-      offset: random(-10, 10),
-      scale: random(0.8, 1.2),
-      rotation: random(-PI/16, PI/16),
-      speed: random(0.001, 0.003)
+function generateLines() {
+  lines = [];
+  for(let i = 0; i < 15; i++) {
+    lines.push({
+      y: random(height),
+      speed: random(0.5, 2),
+      amplitude: random(5, 15),
+      color: colors[floor(random(colors.length))]
     });
   }
 }
@@ -41,50 +37,26 @@ function generatePattern() {
 function windowResized() {
   const headerWidth = document.getElementById("header").offsetWidth;
   resizeCanvas(headerWidth, 64);
-  segmentHeight = height/2;
-}
-
-function drawSegment(x, y, params) {
-  push();
-  translate(x, y);
-  rotate(params.rotation + sin(t * params.speed) * 0.1);
-  scale(params.scale);
-  
-  noFill();
-  stroke(colors[0]);
-  strokeWeight(2);
-  
-  // Draw the vertical pattern
-  beginShape();
-  // Top diamond
-  vertex(0, -15 + params.offset);
-  vertex(10, 0 + params.offset);
-  vertex(0, 15 + params.offset);
-  vertex(-10, 0 + params.offset);
-  endShape(CLOSE);
-  
-  // Middle section
-  line(-5, 15 + params.offset, -5, 25 + params.offset);
-  line(5, 15 + params.offset, 5, 25 + params.offset);
-  
-  // Bottom curves
-  bezier(-5, 25 + params.offset, -10, 30 + params.offset, -10, 35 + params.offset, -5, 40 + params.offset);
-  bezier(5, 25 + params.offset, 10, 30 + params.offset, 10, 35 + params.offset, 5, 40 + params.offset);
-  
-  pop();
+  generateLines();
 }
 
 function drawLogo() {
   background(255, 255, 255, 0);
   
-  // Draw pattern instances across the canvas
-  for(let x = patternWidth; x < width; x += patternWidth * 2) {
-    for(let i = 0; i < pattern.length; i++) {
-      drawSegment(x, height/2, pattern[i]);
+  for(let line of lines) {
+    stroke(line.color);
+    strokeWeight(2);
+    noFill();
+    
+    beginShape();
+    for(let x = 0; x < width; x += 20) {
+      let y = line.y + sin(x * 0.01 + t * line.speed) * line.amplitude;
+      curveVertex(x, y);
     }
+    endShape();
   }
   
-  t += 0.05;
+  t += 0.02;
 }
 
 function draw() {
