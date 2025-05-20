@@ -1,10 +1,17 @@
 function setup() {
-  let canvas = createCanvas(64, 64);
+  const headerWidth = document.getElementById('header').offsetWidth;
+  let canvas = createCanvas(headerWidth, 64);
   canvas.id("logo-canvas");    
   background(255, 255, 255, 0);
   canvas.parent("logo-container");
   drawLogo();
   noLoop();
+}
+
+function windowResized() {
+  const headerWidth = document.getElementById('header').offsetWidth;
+  resizeCanvas(headerWidth, 64);
+  drawLogo();
 }
 
 function drawLogo() {
