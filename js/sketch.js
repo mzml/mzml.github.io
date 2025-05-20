@@ -1,18 +1,18 @@
 
 let cellSize = 40;
 let colors;
-let drawProgress = 0;
 
 function setup() {
   const headerWidth = document.getElementById("header").offsetWidth;
-  let canvas = createCanvas(headerWidth, windowHeight * 0.2);
+  let canvas = createCanvas(headerWidth, 64);
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
 
+  // Complementary colors to #d24317 (orange-red), #d24317 (orange-red), and #969eaf (gray-blue)
   generateRandomColors();
   noFill();
   strokeWeight(3);
-  loop();
+  noLoop();
 }
 
 function generateRandomColors() {
@@ -25,15 +25,15 @@ function generateRandomColors() {
 
 function windowResized() {
   const headerWidth = document.getElementById("header").offsetWidth;
-  resizeCanvas(headerWidth, windowHeight * 0.2);
+  resizeCanvas(headerWidth, 64);
   generateRandomColors();
-  drawProgress = 0;
+  drawPattern();
 }
 
 function drawPattern() {
   background(255, 255, 255, 0);
   
-  for(let x = 0; x < drawProgress; x += cellSize) {
+  for(let x = 0; x < width + cellSize; x += cellSize) {
     push();
     translate(x, height/2);
     
@@ -48,10 +48,6 @@ function drawPattern() {
       endShape();
     }
     pop();
-  }
-  
-  if(drawProgress < width + cellSize) {
-    drawProgress += 20;
   }
 }
 
