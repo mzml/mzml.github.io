@@ -1,8 +1,8 @@
 
-let gridSize;
+let angle;
 let colors;
-let rotationOffset;
-let patternSizes;
+let numShapes = 16;
+let rotationSpeed = 0.001;
 
 function setup() {
   const headerWidth = document.getElementById("header").offsetWidth;
@@ -10,67 +10,80 @@ function setup() {
   canvas.id("logo-canvas");
   canvas.parent("logo-container");
   
-  // Random rotation offset for each refresh
-  rotationOffset = random(TWO_PI);
+  angle = TWO_PI / numShapes;
   
-  // Create color palette with random variations
-  const baseColor = color('#d24317');
+  // Color palette inspired by Islamic art
   colors = [
-    color(red(baseColor) + random(-20, 20), green(baseColor) + random(-20, 20), blue(baseColor) + random(-20, 20)),
-    color('#17d243'),
-    color(random(200, 255), random(20, 50), random(50, 100)),
-    color('#d29217')
+    color('#1a237e'), // Deep blue
+    color('#4fc3f7'), // Light blue
+    color('#ffd700'), // Gold
+    color('#ffffff'), // White
+    color('#00695c')  // Dark teal
   ];
   
-  gridSize = height/2;
-  patternSizes = Array(Math.ceil(headerWidth/gridSize)).fill().map(() => random(0.8, 1.2));
-  loop();
+  noLoop();
 }
 
 function windowResized() {
   const headerWidth = document.getElementById("header").offsetWidth;
   resizeCanvas(headerWidth, 64);
-  gridSize = height/2;
+  redraw();
 }
 
-function drawIslamicPattern(x, y, size, index) {
+function drawPattern(x, y, radius, layers) {
   push();
   translate(x, y);
-  rotate(rotationOffset * index);
   
-  // Draw base circle
-  noFill();
-  strokeWeight(1);
-  
-  // Draw geometric pattern
-  for(let i = 0; i < 8; i++) {
-    stroke(colors[i % colors.length]);
-    rotate(PI/4 + sin(index) * 0.1);
-    line(0, 0, size/2, 0);
-    line(size/3, -size/6, size/3, size/6);
+  // Draw multiple layers of the pattern
+  for(let layer = layers; layer > 0; layer--) {
+    let currentRadius = radius * (layer/layers);
+    
+    // Main star pattern
+    beginShape();
+    for(let i = 0; i < numShapes; i++) {
+      let a = angle * i;
+      let r = currentRadius;
+      let x1 = cos(a) * r;
+      let y1 = sin(a) * r;
+      vertex(x1, y1);
+      
+      // Create pointed star effect
+      let midAngle = a + angle/2;
+      let midRadius = r * 0.4;
+      let x2 = cos(midAngle) * midRadius;
+      let y2 = sin(midAngle) * midRadius;
+      vertex(x2, y2);
+    }
+    endShape(CLOSE);
+    
+    // Decorative circles
+    noFill();
+    strokeWeight(1);
+    stroke(colors[layer % colors.length]);
+    circle(0, 0, currentRadius * 1.5);
+    
+    // Add geometric details
+    for(let i = 0; i < numShapes; i++) {
+      let a = angle * i;
+      push();
+      rotate(a);
+      stroke(colors[(layer + 2) % colors.length]);
+      line(currentRadius * 0.3, 0, currentRadius * 0.7, 0);
+      pop();
+    }
   }
-  
-  // Draw central star
-  beginShape();
-  for(let i = 0; i < 8; i++) {
-    let angle = i * TWO_PI/8;
-    let sx = cos(angle) * size/4;
-    let sy = sin(angle) * size/4;
-    vertex(sx, sy);
-  }
-  endShape(CLOSE);
-  
   pop();
 }
 
 function drawLogo() {
-  clear();
+  background(255, 255, 255, 0);
   
-  // Draw repeating pattern with varying sizes
-  let index = 0;
-  for(let x = gridSize/2; x < width; x += gridSize) {
-    drawIslamicPattern(x, height/2, gridSize * patternSizes[index], index);
-    index++;
+  // Draw patterns across the canvas
+  let patternSize = height * 0.8;
+  let spacing = patternSize * 1.2;
+  
+  for(let x = spacing/2; x < width; x += spacing) {
+    drawPattern(x, height/2, patternSize/2, 3);
   }
 }
 
